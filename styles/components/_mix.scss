@@ -1,0 +1,18 @@
+
+
+@layer mix-components {
+    .component-title {
+        margin-top: 0px!important;
+    }
+
+    /**
+    *
+    * CONTAINER QUERIES
+    * --------------------------------------------------
+    */
+    @layer utilities {
+        .bx-container {
+            container-type: inline-size;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+:root {
+    --halton-legend-gap: 50px;
+    --halton-legend-item-width: 30px;
+    --halton-padding: 12px 30px;
+    --halton-legend-font-size: 16px;
+    --halton-legend-item-padding: 0 0 0 40px;
+    --halton-legend-item-top-pos: 4px;
+    --halton-clr-legend-item-blue: #0489D1;
+    --halton-clr-legend-item-green: #109D59;
+    --halton-clr-legend-item-orange: #E65100;
+}
+
+iframe {
+    width: 100%;
+}
+
+/**
+ * Map Legend
+ * --------------------------------
+**/
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--halton-legend-gap);
+    list-style: none;
+    padding: 0;
+    font-size: var(--halton-legend-font-size);
+
+    @container (max-width: 540px) {
+        --halton-legend-font-size: 12px;
+        --halton-legend-gap: 20px;
+        --halton-legend-item-padding: 0 0 0 35px;
+        --halton-legend-item-top-pos: 2px;
+    } 
+
+    .legend-item {
+        position: relative;
+        padding: var(--halton-legend-item-padding);
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: var(--halton-legend-item-top-pos);
+            content: '';
+            display: block;
+            width: var(--halton-legend-item-width);
+            height: 15px;
+            border-radius: 5px;
+            background-color: aqua;
+        }
+
+        &.color-blue {
+            &::before {
+                background-color: var(--halton-clr-legend-item-blue);
+            }
+        }
+        &.color-green {
+            &::before {
+                background-color: var(--halton-clr-legend-item-green);
+            }
+        }
+        &.color-orange {
+            &::before {
+                background-color: var(--halton-clr-legend-item-orange);
+            }
+        }
+    }
+}

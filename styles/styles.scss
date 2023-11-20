@@ -1,0 +1,45 @@
+/**
+ *
+ * NOTE: THIS STYLE HAS TO GO TO THE MASTER CSS FILE.
+ * - I'm using important all over the place to override bootstrap styles
+ *
+ * (Eric Njanga - Sep 2023)
+ * ----------
+ * ----------
+**/
+/**
+ *
+ * NOTE: 
+ *
+**/
+
+// Layer declared for hierarchy purpose (halton styles)
+@layer halton-2018 {} 
+
+@layer framework {
+    @import 'framework/bootstrap-overwrite';
+}
+@layer base {
+    @import 'base/typography';
+    @import 'base/headings';
+}
+@layer components {
+    @import 'components/calloutbox';
+    @import 'components/collapse';
+    @import 'components/icons';
+    @import 'components/iframe';
+    @import 'components/alert';
+    @import 'components/tabs';
+    @import 'components/thumbnails';
+    @import 'components/timeline';
+    @import 'components/mix';
+    @import 'components/sidebar';
+    @import 'components/share-buttons';
+    @import 'components/card';
+    @import 'components/buttons';
+}
+@layer layouts {
+    @import 'layouts/grid';
+    @import 'layouts/page';
+    @import 'layouts/section-spacer';
+}

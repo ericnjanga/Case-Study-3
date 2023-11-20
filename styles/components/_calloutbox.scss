@@ -1,0 +1,118 @@
+:root {
+    --halton-callout-clr-bg: #1E552A;
+    --halton-callout-clr-btn: #fff;
+    --halton-callout-clr-text: #CEE3C5;
+    
+    --halton-callout-clr-subtitle: #FFD64F;
+
+    --halton-callout-grid-gap: 30px;
+    --halton-callout-grid-templ: auto 1fr / 1fr;
+    --halton--callout-wrapper-display: block;
+    --halton-callout-title-marg: 20px;
+    --halton-callout-paragraph-marg: 20px;
+    --halton-callout-padding: 40px 20px;
+    --halton-callout-btn-padding: 10px 12px 10px 36px;
+    --halton-callout-btn-icon-pos: 12px;
+    --halton-callout-img-height: 350px;
+}
+
+
+
+.halton-callout-box {
+    display: grid;
+    gap: var(--halton-callout-grid-gap);
+    grid-template: var(--halton-callout-grid-templ);
+    padding: var(--halton-callout-padding);
+    background-color: var(--halton-callout-clr-bg);
+
+
+    @media (min-width: 1400px) {
+        // border: 15px solid rgb(243, 117, 0)!important;
+        --halton-callout-padding: 70px 130px!important;
+        --halton-callout-title-marg: 30px!important;
+        --halton-callout-paragraph-marg: 35px!important;
+    }
+    @media (min-width: 1200px) and (max-width: (1400px - 1)) {
+        // border: 15px solid rgb(255, 221, 0)!important;
+        --halton-callout-padding: 70px 130px!important;
+    }
+    @media (min-width: 992px) {
+        // border: 15px solid lime;
+        --halton-callout-grid-gap: 90px;
+        --halton--callout-wrapper-display: flex;
+        --halton-callout-grid-templ: 1fr / 50% 1fr;
+        // --halton-callout-img-height: 450px;
+        --halton-callout-padding: 50px 30px;
+        --halton-callout-btn-padding: 18px 36px 18px 46px;
+        --halton-callout-btn-icon-pos: 18px;
+        --halton-callout-title-marg: 25px;
+        --halton-callout-paragraph-marg: 30px;
+    }
+    @media (min-width: 768px) and (max-width: (992px - 1)) {
+        // border: 15px solid blue;
+        --halton-callout-padding: 50px 25%;
+    }
+    @media (min-width: 576px) and (max-width: (768px - 1)) {
+        // border: 15px solid rgb(228, 0, 240);
+        --halton-callout-padding: 40px 15%;
+    }
+    // @media (max-width: (576px - 1px)) {
+    //     border: 15px solid rgb(210, 30, 30);
+    // }
+}
+.halton-callout-box__wrapper {
+    display: var(--halton--callout-wrapper-display)!important;
+    flex-direction: column;
+    justify-content: center;
+    p {
+        margin-bottom: var( --halton-callout-paragraph-marg)!important;
+    }
+    .halton-callout-box__btn {
+        width: fit-content;
+    }
+}
+.halton-callout-box__subtitle {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--halton-callout-clr-subtitle);
+}
+.halton-callout-box__title {
+    color: var(--halton-callout-clr-btn)!important;
+    margin-top: 0!important;
+    margin-bottom: var(--halton-callout-title-marg)!important;
+}
+
+h2.halton-callout-box__title,
+.halton-callout-box__title,
+.halton-callout-box__wrapper p {
+    color: var(--halton-callout-clr-text)!important;
+}
+.halton-callout-box__img {
+    max-width: 100%;
+    object-fit: cover;
+    height: var(--halton-callout-img-height);
+    object-position: center top; /* Centers the image horizontally and aligns it to the top vertically */
+}
+
+.halton-callout-box__btn {
+    position: relative;
+    color: var(--halton-callout-clr-bg)!important;
+    padding: var(--halton-callout-btn-padding)!important;
+    font-weight: bold!important;
+    border-radius: 0!important;
+    text-transform: uppercase;
+    text-decoration: none!important;
+    background-color: var(--halton-callout-clr-btn)!important;
+    transition: all 0.3s;
+
+    &:hover {
+        --halton-callout-clr-btn: #FFD64F;
+    }
+}
+.halton-callout-box__btn::before {
+    left: var(--halton-callout-btn-icon-pos);
+}
+
+
+
+

@@ -1,0 +1,121 @@
+
+.halton-share__text.icon-share::after,
+.halton-collapse .panel-heading a::after,
+.text-icon::after,
+.text-icon::before,
+.list-icon-check li::before,
+.icon-summary::before,
+.icon-warning::before,
+.alert-icon::before,
+.card-icon::before,
+.halton-callout-box__btn::before {
+    position: absolute;
+    font-family: bootstrap-icons !important;
+    display: block;
+}
+
+.halton-callout-box__btn::before {
+    content: '\F138';
+}
+
+
+.icon-info::before {
+    content: '\F430';
+}
+.icon-summary::before {
+    content: '\F444';
+}
+.icon-mail::before {
+    content: '\F32C';
+}
+.icon-cellphone::before {
+    content: '\F4E2';
+}
+.icon-mappin::before {
+    content: '\F3E7';
+}
+.icon-warning::before {
+    content: '\F332';
+}
+
+
+
+.text-icon-before {
+    &.icon-pin::before {
+        content: '\F3E7';
+    }
+    &.icon-old-phone::before {
+        content: '\F5B4';
+    }
+    &.icon-external::before {
+        content: '\F1C5';
+    }
+    &.icon-link::before {
+        content: '\F470';
+    }
+}
+
+.text-icon-after {
+    &.icon-pin::after {
+        content: '\F3E7';
+    }
+    &.icon-old-phone::after{
+        content: '\F5B4';
+    }
+    &.icon-external::after {
+        content: '\F1C5';
+    }
+    &.icon-link::after {
+        content: '\F470';
+    }
+}
+
+
+
+
+.list-icon-check {
+    list-style: none;
+    li::before {
+        left: -16px;
+        content: '\F633';
+        color: var(--halton-clr-accent);
+    }
+    li {
+        position: relative;
+        padding-left: 13px;
+    }
+}
+
+
+
+.icon-summary::before,
+.card-icon,
+.alert-icon::before {
+    font-size: 30px;
+}
+
+.text-icon {
+    position: relative;
+
+    &::before,
+    &::after {
+        color: var(--halton-clr-link)!important;
+    }
+
+    // ...
+    &.text-icon-before {
+        padding-left: 19px;
+        &::before {
+            display: inline-block;
+            margin-right: 4px;
+            left: 0;
+        }
+    }
+    &.text-icon-after {
+        padding-right: 19px;
+        &::after {
+            display: inline-block;
+            margin-left: 4px;
+        }
+    }
+}

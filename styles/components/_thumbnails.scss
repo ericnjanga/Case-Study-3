@@ -1,0 +1,17 @@
+:root {
+    --halton-clr-thumbnail-bg: transparent;
+    --halton-padding: 12px 30px;
+}
+
+
+.thumbnail {
+    padding:0 0 1px 0 !important;
+    border-radius: 0!important;
+    border-width: 0!important;
+    background-color: var(--halton-clr-thumbnail-bg)!important;
+
+    .caption {
+        margin: 15px 0 0 0;
+        padding: 0!important;
+    }
+}

@@ -1,0 +1,44 @@
+
+
+
+.alert-title {
+    margin-top: 0px!important;
+}
+
+
+/**
+ * Temporary wrapper used implement certain features in isolation of halton's default styles
+ * (GetResource.ashx?stylesheetname=halton)
+ * (This is ment to avoid conflicts)
+**/
+.halton-features-wrapper {
+    // Override 
+    .row { 
+        margin-left: -15px!important;
+        margin-right: -15px!important;
+    }
+
+
+    // Links color
+    p a,
+    ul:not(.halton-nav-tabs) a,
+    ol a,
+    a.text-icon {
+        color: var(--halton-clr-link)!important;
+        text-decoration: underline!important;
+    
+        &:hover {
+            text-decoration: none!important;
+        }
+    }
+}
+
+
+/**
+ * Banner video style imported from Halton.ca Kentico
+ * ------------
+**/
+.bannervideo {
+    width: 60%;
+    padding: 10em 0 0 3em;
+}

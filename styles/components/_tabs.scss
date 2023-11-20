@@ -1,0 +1,70 @@
+@import './../base/variables';
+
+:root {
+    --halton-clr-accent-active-txt: #1F261E;
+    --halton-tab-padding: 12px 30px;
+    --halton-tab-content-padding: 10px;
+    --halton-tab-content-container-padding: 0;
+}
+
+
+.halton-nav-tabs {
+    position: relative;
+    bottom: -1px;
+    border-bottom: 0px solid #ddd!important;
+    > li.active > a {
+        border-radius: 0px!important;
+        border: 0px salmon solid!important;
+        text-decoration: none!important;
+        color: var(--halton-clr-accent-active-txt)!important;
+        border-bottom: 1px solid var(--halton-clr-neutral-light)!important;
+        background-color: var(--halton-clr-neutral-light)!important;
+    }
+
+    > li:not(.active) {
+        a {
+            color: var(--halton-clr-link)!important;
+        }
+    }
+
+    > li > a {
+        text-decoration: none!important;
+        padding: var(--halton-tab-padding)!important;
+    }
+}
+.halton-nav-tabs.theme2 {
+    > li.active > a {
+        border-bottom: 1px solid var(--halton-clr-background-active2)!important;
+        background-color: var(--halton-clr-background-active2)!important;
+    }
+}
+
+
+
+
+
+
+.halton-nav-tabs + .tab-content {
+    background-color: var(--halton-clr-neutral-light)!important;
+    border-radius: 0px!important;
+    border-width: 0px!important;
+    padding: var(--halton-tab-content-padding)!important;
+
+    // Custom padding for inner container
+    .container {
+        padding: var(--halton-tab-content-container-padding)!important;
+    }
+
+    .halton-card {
+        background-color: var(--halton-clr-neutral-accent)!important;
+    }
+
+    @media (min-width: 1200px) {
+        --halton-tab-content-padding: 30px;
+        --halton-tab-content-container-padding: 1rem;
+    }
+}
+
+.halton-nav-tabs + .tab-content.theme2 {
+    background-color: var(--halton-clr-background-active2)!important;
+}

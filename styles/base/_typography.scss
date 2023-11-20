@@ -1,0 +1,18 @@
+
+
+:root {
+    --halton-clr-text: #313D2F;
+}
+body {
+    font-size: 17px;
+    font-family: MyriadProReg,Arial,'Times New Roman';
+}
+
+
+/**
+ * 
+*/
+p, ul {
+    color: var(--halton-clr-text);
+    font-size: 16px;
+}

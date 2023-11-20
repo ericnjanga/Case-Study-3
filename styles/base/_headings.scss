@@ -1,0 +1,126 @@
+:root {
+    --site-h1-font-size: 30px;
+    --site-h1-line-height: 32px;
+
+    --site-h2-font-size: 27px;
+    --site-h2-line-height: 30px;
+
+    --site-h3-font-size: 24px;
+    --site-h3-line-height: 24px;
+    // ...
+    --site-h4-font-size: 20px;
+    --site-h4-line-height: 24px;
+
+    --site-h5-font-size: 19px;
+    --site-h5-line-height: 18px;
+
+    --site-h6-font-size: 17px;
+    --site-h6-line-height: 16px;
+
+    --halton-section-title-margin-bottom: 10px;
+}
+
+
+/**
+ * Global Headings styles
+ * ---------
+*/
+@layer headings {
+    // h1, h2, h3, h4,
+    h4, .h4, 
+    h5, .h5, 
+    h6, .h6 {
+        font-weight: bold!important;
+    }
+
+    // There is a conflict with halton styles, that's why I'm commenting this out!
+    // h1, h2, h3, h4, h5, h6 {
+    //     color: var(--site-clr-headings)!important;
+    // }
+
+    .page-title,
+    .section-title,
+    .section-subtitle {
+        color: var(--site-clr-headings);
+    }
+    .page-title,
+    .section-title,
+    .section-subtitle {
+        position: relative;
+        z-index: 1;
+    }
+
+    .pre-title {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+
+    .section-title {
+        margin-bottom: var(--halton-section-title-margin-bottom)!important;
+        
+        @media (min-width: 1200px) {
+            --halton-section-title-margin-bottom: 20px;
+        }
+    }
+}
+
+
+@layer headings {
+    h1, .h1 {
+        font-size: var(--site-h1-font-size)!important;
+        line-height: var(--site-h1-line-height)!important;
+
+        @media (min-width: 1200px) {
+            --site-h1-font-size: 40px;
+            --site-h1-line-height: 42px;
+        }
+        @media (min-width: 992px) and (max-width: (1200px - 1)) {
+                --site-h1-font-size: 35px;
+                --site-h1-line-height: 36px;
+        }
+    }
+
+    h2, .h2 {
+        font-size: var(--site-h2-font-size)!important;
+        line-height: var(--site-h2-line-height)!important;
+
+        @media (min-width: 1400px) {
+            --site-h2-font-size: 32px;
+            --site-h2-line-height: 36px;
+        }
+        @media (min-width: 992px) and (max-width: (1200px - 1)) {
+            --site-h2-font-size: 29px;
+            --site-h2-line-height: 33px;
+        }
+    }
+    
+    h3, .h3 {
+        font-size: var(--site-h3-font-size)!important;
+        line-height: var(--site-h3-line-height)!important;
+
+        @media (min-width: 1400px) {
+            --site-h3-font-size: 26px;
+            --site-h3-line-height: 30px;
+        }
+        @media (min-width: 992px) and (max-width: (1200px - 1)) {
+            --site-h3-font-size: 25px;
+            --site-h3-line-height: 25px;
+        }
+    }
+   
+    h4, .h4 {
+        font-size: var(--site-h4-font-size)!important;
+        line-height: var(--site-h4-line-height)!important;
+    }
+ 
+    h5, .h5 {
+        font-size: var(--site-h5-font-size)!important;
+        line-height: var(--site-h5-line-height)!important;
+    }
+
+    h6, .h6 {
+        font-size: var(--site-h6-font-size)!important;
+        line-height: var(--site-h6-line-height)!important;
+    }
+}

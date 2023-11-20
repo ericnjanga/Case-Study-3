@@ -1,0 +1,277 @@
+:root {
+    --halton-callout-clr-bg: #1E552A;
+}
+
+@mixin socialshare($btnHeight, $btnWidth, $btnCount, $btnRadius, $btnColor) {
+    $parent: &;
+    $spacing: 6px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    float: left;
+
+    height: $btnHeight;
+    line-height: $btnHeight;
+    border-radius: $btnRadius;
+
+    //This is there to help with the click state
+    &:after {
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        content: '';
+    }
+
+    //Click ze button!
+    &:active {
+        &:after {
+            height: 0; //hides the button's click overlay
+            z-index: -1; //moves it back
+            opacity: 0;
+        }
+    }
+
+    //This is the text displayed on the btn
+    &__text {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        transition: .2s all ease-out;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        background-color: $btnColor;
+        border-radius: $btnRadius;
+        user-select: none;
+    }
+
+    //All the button stuff goes here
+    &__content {
+        position: relative;
+        height: inherit;
+
+        //Gives you a bit of room on both sides for your hover off
+        &:after,
+        &:before {
+            content: '';
+            display: none;
+            height: 100%;
+            position: absolute;
+            width: $spacing;
+            z-index: -1;
+        }
+
+        &:after {
+            left: $spacing * -1;
+        }
+
+        &:before {
+            right: $spacing * -1;
+        }
+
+        &:hover {
+            z-index: 1000;
+
+            &:after,
+            &:before {
+                display: block;
+            }
+
+            #{$parent}__text {
+                transition: 0s all ease-out;
+                transition-delay: 0s;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            #{$parent}__social {
+                transition: .2s all ease-out;
+                @if $btnWidth >($btnHeight * $btnCount)+($btnCount - 1) * $spacing {
+                    width: calc(#{$btnWidth} / #{$btnCount}); // ($btnWidth / $btnCount);
+                }
+
+                @else {
+                    width: $btnHeight;
+                }
+
+                border-radius: $btnRadius;
+                margin-left: $spacing;
+
+                
+                &:hover {
+                    background-color: var(--halton-callout-clr-bg)!important;
+
+                    &:after {
+                        color: #fff!important;
+                    }
+                }
+
+
+
+                &--first {
+                    margin-left: 0;
+                }
+
+                &:after {
+                    opacity: 1;
+                    color: var(--halton-callout-clr-bg)!important;
+                }
+
+                &--facebook {
+                    background-color: #496094;
+                }
+
+                &--twitter {
+                    background-color: #4ac4f3;
+                }
+
+                &--linkedin {
+                    background-color: #2388d6;
+                }
+
+                &--google {
+                    background-color: #da4835;
+                }
+            }
+        }
+    }
+
+    //These are the social icons/buttons
+    &__social {
+        position: relative;
+
+        display: block;
+        height: $btnHeight;
+        width: calc(#{$btnWidth} / #{$btnCount}); // $btnWidth / $btnCount;
+        float: left;
+        color: white;
+
+        background-color: $btnColor;
+
+        transition: all .15s ease-out;
+
+        &--first {
+            border-radius: $btnRadius 0 0 $btnRadius;
+        }
+
+        &--last {
+            border-radius: 0 $btnRadius $btnRadius 0;
+        }
+
+        &:after {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-family: bootstrap-icons !important;
+            text-align: center;
+
+            font-size: 20px;
+            line-height: $btnHeight;
+            content: '';
+            opacity: 0;
+            transition: .15s all ease-out;
+        }
+
+        &--facebook:after {
+            content: '\F344';
+        }
+
+        &--twitter:after {
+            content: '\F5EF';
+        }
+
+        &--linkedin:after {
+            content: '\F472';
+        }
+
+        &--print:after {
+            content: '\F500';
+        }
+
+        &--print:after {
+            content: '\F500';
+        }
+
+        &--mail:after {
+            content: '\F32C';
+        }
+    }
+}
+
+
+
+
+.icon-share::after {
+    top: -2px;
+    right: 15px;
+    content: "\f52d";
+    color: var(--halton-callout-clr-bg);
+}
+
+
+
+.halton-share {
+    @include socialshare(48px, 80px, 3, 0px, #fff);
+    clear: both;
+    float: right;
+
+    &__text {
+        font-weight: bold;
+        font-size: 18px;
+        border: 2px solid var(--halton-callout-clr-bg)!important;
+
+        span {
+            position: relative;
+            left: 15px;
+            color: var(--halton-callout-clr-bg);
+        }
+    }
+
+   
+
+    &:hover {
+        .halton-share__text {
+            background: var(--halton-callout-clr-bg);
+            span {
+                color:#fff;
+            }
+            &::after {
+                color:#fff;
+            }
+        }
+    }
+}
+
+
+
+
+.demo {
+    margin: 60px auto;
+    width: 400px;
+    font-family: Arial;
+
+    h1 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    p {
+        color: #777;
+        margin-top: 16px;
+    }
+
+    code {
+        font-family: courier;
+        color: #34b99d;
+    }
+}

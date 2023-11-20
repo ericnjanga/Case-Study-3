@@ -1,0 +1,112 @@
+:root {
+    --halton-grid-checklist-grid-template: 1fr/ auto 1fr;
+    --halton-grid-checklist-gap: 40px;
+    --halton-grid-checklist-list-margin-bottom: 10px;
+    --halton-grid-photo-grid-template: repeat(2, auto) / repeat(2, auto);
+
+
+    --halton-rbeh-display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+// 1 row, 2 columns
+.grid-checklist {
+    grid-template: var(--halton-grid-checklist-grid-template);
+    gap: var(--halton-grid-checklist-gap);
+
+    @container (max-width: 540px) {
+        --halton-grid-checklist-grid-template: auto auto / 1fr;
+        --halton-grid-checklist-gap: 0;
+        --halton-grid-checklist-list-margin-bottom: 0;
+    } 
+}
+
+.grid-checklist__list {
+    margin-bottom: var(--halton-grid-checklist-list-margin-bottom)!important;
+}
+
+.grid-photo-gallery {
+    margin: 0 auto; /* Center the grid horizontally */
+    grid-template: var(--halton-grid-photo-grid-template);
+    gap: 10px;
+
+    @media (min-width: 576px) {
+        --halton-grid-photo-grid-template: auto / repeat(4, 1fr);
+    }
+}
+
+
+/**
+ * Grid gap
+ * ----------
+**/
+.gap10 {
+    gap: 10px;
+}
+.gap20 {
+    gap: 20px;
+}
+.gap30 {
+    gap: 30px;
+}
+.gap40 {
+    gap: 40px;
+}
+
+.js-photo-gallery  {
+    // grid-template-columns: repeat(4, 1fr);
+    // Ensure the grid fits within the container's width
+
+    .grid-item {
+        text-align: center; /* Center the image within each column */
+  
+        img {
+            max-width: 100%; /* Ensure images shrink to fit their container's width */
+            height: auto; /* Maintain aspect ratio while resizing */
+        }
+    }
+}
+
+
+
+.gallery-thumb-wrap {
+    display: block;
+    background: #fff;
+    padding: 3px;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+
+    img {
+	    transition: all .35s
+    }
+    &:hover img {
+        opacity: .6;
+        transform: translate3d(0, 0, 0) scale(1.16);
+        -webkit-transform: translate3d(0, 0, 0) scale(1.16)
+    }
+
+    // border: 4px solid green;
+}
+
+
+
+/**
+ * [rbeh] Row of boxes of equal height
+ * --------
+*/
+.rbeh {
+    display: var(--halton-rbeh-display);
+    flex-wrap: wrap;
+    row-gap: 30px;
+
+    > div {
+        width: 100%;
+    }
+}
+.rbeh-item {
+    height: 100%;
+}
+

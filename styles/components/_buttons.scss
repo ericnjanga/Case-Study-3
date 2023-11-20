@@ -1,0 +1,18 @@
+
+:root {
+    --halton-clr-btn-primary: #1E552A;
+    --halton-clr-btn-primary-hover: #37a14e;
+}
+
+.halton-btn-primary {
+    border-radius: 0px!important;
+    background-color: var(--halton-clr-btn-primary)!important;
+    text-transform: uppercase;
+    text-decoration: none!important;
+    color: #fff!important;
+    padding: 11px 12px!important;
+
+    &:hover {
+        background-color: var(--halton-clr-btn-primary-hover)!important;
+    }
+}

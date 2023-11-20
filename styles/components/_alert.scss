@@ -1,0 +1,142 @@
+
+:root {
+    --halton-clr-alert-success-bdr: #B9E3A8;
+    --halton-clr-alert-success-bg: #EDF7E9;
+    --halton-clr-alert-warning-bdr: #F9F18C;
+    --halton-clr-alert-warning-bg: #F7F6E9;
+    --halton-clr-title: #1F261E;
+    --halton-clr-alert-icon: #283627;
+
+    --halton-alert-border-left-width: 73px;
+    --halton-alert-icon-left-pos: -40px;
+    --halton-alert-v-padding: 30px;
+}
+
+
+
+
+
+
+/**
+ *
+ * Alert box new styling
+ * Note: "alert" and "alert-info" are Bootstrap classes
+ * ----------
+**/
+@layer alert {
+
+    .alert {
+        position: relative;
+        border-width: 0!important;
+        border-left-width: var(--halton-alert-border-left-width)!important;
+        border-radius: 0!important;
+        padding-top: var(--halton-alert-v-padding)!important;
+        padding-bottom: var(--halton-alert-v-padding)!important;
+        
+        --halton-alert-icon-left-pos: -51px; // icon left position
+
+
+        @container (max-width: 540px) {
+            --halton-alert-border-left-width: 50px;
+            --halton-alert-icon-left-pos: -40px;
+            --halton-alert-v-padding: 15px;
+        } 
+    }
+
+
+
+    .alert-icon::before {
+        top: 30px;
+        left: var(--halton-alert-icon-left-pos);
+        color: var(--halton-clr-alert-icon)!important;
+    }
+    .alert {
+        color: #383d41;
+        /* Darkening alert color to ensure WCAG 2.0 Compliance */
+    }
+    .alert-info {
+        border: 1px solid #d3d6db;
+        background-color: #b5dfff;
+    }
+    .alert-success {
+        background-color: var(--halton-clr-alert-success-bg)!important;
+        border-color: var(--halton-clr-alert-success-bdr)!important;
+    }
+    .alert-warning {
+        background-color: var(--halton-clr-alert-warning-bg)!important;
+        border-color: var(--halton-clr-alert-warning-bdr)!important;
+    }
+    .alert-secondary {
+        border: 1px solid #d3d6db;
+        background-color: #e2e3e5;
+    }
+    .alert-full-width ul {
+        /* Reducing list spacing to ensure perfect alignment of bullets with content */
+        padding-left: 17px;
+    }
+
+
+    .alert-title {
+        color: var(--halton-clr-title)!important;
+    }
+
+
+
+
+
+
+
+    /**
+    *
+    * Text Highlights
+    * ----------
+    */
+    .text-highlight-success { color: #0a8526!important; }
+    .text-highlight-warning { color: #986f18!important; }
+
+
+    /*
+    * ".alert-full-width"
+    * Decorator class designed to modify alert components that occupy the entire viewport.
+    * How it works: As the viewport increases, so does the alert padding.
+    * Note: Custom padding must not be applied directly to ".alert"
+    * ----------
+    **/
+    .alert-full-width {
+        @media (min-width: 1400px) {
+            padding: 70px;
+        }
+    }
+    .alert-full-width {
+        @media (min-width: 1200px) and (max-width: 1399px) {
+            padding: 60px;
+        }
+    }
+    .alert-full-width {
+        @media (min-width: 992px) and (max-width: 1199px) {
+            padding: 50px;
+        }
+    }
+    .alert-full-width {
+        @media (min-width: 768px) and (max-width: 991px) {
+            padding: 40px;
+        }
+    }
+    .alert-full-width {
+        @media (min-width: 576px) and (max-width: 767px) {
+            padding: 30px;
+        }
+    }
+    .alert-full-width {
+        @media (max-width: 575px) {
+            padding: 20px;
+        }
+    }
+
+
+
+}
+
+
+ 
+

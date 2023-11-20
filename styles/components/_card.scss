@@ -1,0 +1,56 @@
+
+:root {
+    --halton-clr-card-icon: #55924D;
+}
+
+@layer halton-card {
+
+    .halton-card.card {
+        background-color: var(--halton-clr-neutral-light);
+    }
+
+    .halton-card {
+        padding: 20px;
+        border-width: 0;
+        border-radius: 0;
+
+        &.card-icon {
+            padding-top: 55px;
+        }
+
+        .card-block {
+            margin-bottom: 20px!important;
+
+            &:last-of-type {
+                margin-bottom: 0px!important;
+            }
+        }
+
+        .card-body {
+            padding: 0!important;
+        }
+        .card-title {
+            margin-top: 0!important;
+        }
+        .card-footer {
+            margin-top: 20px;
+        }
+        .card-subtitle {
+            margin-bottom: 5px!important;
+        }
+        a:not(.btn) {
+            // text-decoration: underline !important;
+            color: var(--halton-clr-link) !important;
+            &:hover {
+                text-decoration: none !important;
+            }
+        }
+        p:last-child {
+            margin-bottom: 0!important;
+        }
+    }
+    .halton-card.card-icon::before {
+        color: var(--halton-clr-card-icon)!important;
+        top: 10px;
+    }
+}

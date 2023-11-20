@@ -1,0 +1,233 @@
+@import './../base/variables';
+
+:root {
+    --halton-clr-timeline-point: #1E552A;
+    --halton-clr-timeline-bar: #ADADAD;
+    --halton-timeline-item-gap: 15px;
+    --halton-timeline-item-left-gap: 6px;
+    --halton-timeline-item-even-left-pos: 0;
+    --halton-timeline-item-odd-left-pos: 0;
+
+    --halton-timeline-width: 100%;
+
+    --halton-timeline-item-odd-padding-left: 30px;
+    --halton-timeline-item-odd-padding-right: 0;
+    --halton-timeline-item-even-padding-left: 30px;
+    --halton-timeline-item-even-padding-right: 0;
+
+    --halton-timeline-item-odd-left-border: 6px solid var(--halton-clr-timeline-bar);
+    --halton-timeline-item-odd-right-border: 0px solid var(--halton-clr-timeline-bar);
+    --halton-timeline-item-even-left-border: 6px solid var(--halton-clr-timeline-bar);
+    --halton-timeline-item-even-right-border: 0px solid var(--halton-clr-timeline-bar);
+
+    --halton-timeline-item-width: calc(100% - 6px);
+    --halton-timeline-item-left-margin: 6px;
+
+    --halton-title-align: left;
+
+    --halton-timeline-item-pointer-dim: 15px;
+    --halton-timeline-1st-item-pointer-top-pos: 25px;
+    --halton-timeline-item-pointer-top-pos: 10px;
+    --halton-timeline-item-pointer-even-left-pos: -3px;
+    --halton-timeline-item-pointer-odd-left-pos: -3px;
+
+    --halton-timeline-item-time-font-size: 1.6rem;
+}
+
+ 
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@layer timeline {
+    .halton-timeline {
+        margin-left: auto;
+        margin-right: auto;
+        width: var(--halton-timeline-width);
+        overflow: hidden;
+
+        .component-title {
+            text-align: var(--halton-title-align);
+            // Overriding Halton.ca styles
+            margin-bottom: 10px!important;
+            border-bottom-width: 0!important;
+        }
+
+        // ...
+        @media (min-width: 992px) {
+            --halton-timeline-item-gap: 40px!important;
+            --halton-timeline-1st-item-pointer-top-pos: 43px!important;
+        }
+        @media (min-width: 830px) {
+            --halton-timeline-width: 740px;
+        }
+        @media (min-width: 768px) {
+            --halton-timeline-item-pointer-dim: 30px;
+            --halton-timeline-1st-item-pointer-top-pos: 34px;
+            --halton-timeline-item-pointer-top-pos: 4px;
+            --halton-timeline-item-gap: 30px;
+        }
+        @media (min-width: 576px) and (max-width: (768px - 1)) {
+            --halton-timeline-item-left-gap: auto;
+        }
+        @media (min-width: 576px) {
+            --halton-title-align: center;
+
+            --halton-timeline-item-odd-left-pos: 50%;
+            --halton-timeline-item-width: calc(50% + 6px);
+            --halton-timeline-item-left-margin: 0;
+
+            --halton-timeline-item-even-left-border: 0px solid var(--halton-clr-timeline-bar);
+            --halton-timeline-item-even-right-border: 6px solid var(--halton-clr-timeline-bar);
+
+            --halton-timeline-item-even-padding-left: 0;
+            --halton-timeline-item-even-padding-right: 30px;
+
+            --halton-timeline-item-pointer-even-left-pos: calc(100% + 3px);
+        }
+
+
+        ul {
+            margin: 0;
+            padding: 0;
+
+            // Vertical bar ...
+            li {
+                list-style-type: none;
+                position: relative;
+                width: var(--halton-timeline-item-width);
+                padding-bottom: var(--halton-timeline-item-gap);
+                margin-left: var(--halton-timeline-item-left-margin);
+
+                // Create a spacing gap between the first item and the timeline title
+                // (It will create a visual connection between the timeline title and the 1st item)
+                &:first-of-type {
+                    padding-top: var(--halton-timeline-item-gap);
+
+                    &::after {
+                        top: var(--halton-timeline-1st-item-pointer-top-pos);
+                    }
+                }
+
+                &::after {
+                    transition: background 0.5s ease-in-out;
+                }
+
+                &:nth-child(odd) {
+                    left: var(--halton-timeline-item-odd-left-pos); 
+
+                    border-left: var(--halton-timeline-item-odd-left-border);
+                    border-right: var(--halton-timeline-item-odd-right-border);
+
+                    padding-left: var(--halton-timeline-item-odd-padding-left);
+                    padding-right: var(--halton-timeline-item-odd-padding-right);
+
+                    > div {
+                        // - Push "odd" items right
+                        transform: translate3d(200px, 0, 0); 
+
+                        // ...
+                        &::before {
+                            left: -15px;
+                            border-width: 8px 16px 8px 0;
+                            border-color: transparent var(--halton-clr-neutral-accent) transparent transparent;
+                        }
+                    }
+                    &::after {
+                        left: var(--halton-timeline-item-pointer-odd-left-pos);
+                    }
+                }
+
+                &:nth-child(even) {
+                    left: var(--halton-timeline-item-even-left-pos); 
+
+                    border-left: var(--halton-timeline-item-even-left-border);
+                    border-right: var(--halton-timeline-item-even-right-border);
+
+                    padding-left: var(--halton-timeline-item-even-padding-left);
+                    padding-right: var(--halton-timeline-item-even-padding-right);
+
+                    > div {
+                        // - Push "even" items left 
+                        transform: translate3d(-200px, 0, 0); 
+
+                        &::before {
+                            @media (min-width: 576px) {
+                                right: -15px;
+                                border-width: 8px 0 8px 16px;
+                                border-color: transparent transparent transparent var(--halton-clr-neutral-accent);
+                            }
+                            @media (max-width: (576px - 1px)) {
+                                left: -15px;
+                                border-width: 8px 16px 8px 0;
+                                border-color: transparent var(--halton-clr-neutral-accent) transparent transparent;
+                            }
+                        }
+                    }
+
+                    &::after {
+                        left: var(--halton-timeline-item-pointer-even-left-pos);
+                    }
+                }
+
+                &.in-view {
+                    &::after {
+                        background: var(--halton-clr-neutral-accent);
+                    }
+                    div {
+                        transform: none;
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+
+                // Timeline item
+                div {
+                    position: relative;
+                    bottom: 0;
+                    padding: 15px;
+                    background: var(--halton-clr-neutral-accent);
+
+                    // Effect
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: all 0.5s ease-in-out;
+
+                    * {
+                        color: var(--halton-clr-neutral-accent-text);
+                    }
+
+                    // ...
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 7px;
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                    }
+                }
+
+                // Vertical bar > Point of square shape (defining each timeline item)
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: var(--halton-timeline-item-pointer-top-pos);
+                    transform: translateX(-50%);
+                    width: var(--halton-timeline-item-pointer-dim);
+                    height: var(--halton-timeline-item-pointer-dim);
+                    background-color: var(--halton-clr-timeline-point) !important;
+                    background: inherit;
+                    z-index: 1;
+                }
+            }
+        } // ul
+
+
+        time {
+            display: inline;
+            font-size: var(--halton-timeline-item-time-font-size);
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+    }// timeline
+}

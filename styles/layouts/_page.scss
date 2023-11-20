@@ -1,0 +1,36 @@
+
+
+
+/**
+ * Lists padding and margin
+ * --------
+**/
+.page-sidebar,
+.thumbnail .caption {
+    ul:last-of-type {
+        margin-bottom: 0px!important;
+    }
+}
+
+.list-v-align {
+    padding-left: 15px;
+}
+
+
+
+
+/**
+ * Spacing
+ * --------
+**/
+.mb10 {
+    margin-bottom: 10px!important;
+}
+.mb20 {
+    margin-bottom: 20px!important;
+}
+.mb30 {
+    margin-bottom: 30px!important;
+}
+
+
