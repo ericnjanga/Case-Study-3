@@ -1,10 +1,5 @@
-
-
-
 .alert-title {
-    margin-top: 0px!important;
 }
-
 
 /**
  * Temporary wrapper used implement certain features in isolation of halton's default styles
@@ -12,33 +7,61 @@
  * (This is ment to avoid conflicts)
 **/
 .halton-features-wrapper {
-    // Override 
-    .row { 
-        margin-left: -15px!important;
-        margin-right: -15px!important;
-    }
+  // Override
+  .row {
+  }
 
+  // Links color
+  p a,
+  ul:not(.halton-nav-tabs) a,
+  ol a,
+  a.text-icon {
 
-    // Links color
-    p a,
-    ul:not(.halton-nav-tabs) a,
-    ol a,
-    a.text-icon {
-        color: var(--halton-clr-link)!important;
-        text-decoration: underline!important;
-    
-        &:hover {
-            text-decoration: none!important;
-        }
+    &:hover {
     }
+  }
+  .marg {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }
-
 
 /**
  * Banner video style imported from Halton.ca Kentico
  * ------------
 **/
 .bannervideo {
-    width: 60%;
-    padding: 10em 0 0 3em;
+  width: 60%;
+  padding: 10em 0 0 3em;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.img-border {
+  background-color: lightgray;
+  max-width: 100%;
+  height: auto;
+  border: 2px black solid;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.text-color {
+  color: #313d2f !important;
+  text-decoration: underline !important;
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+.modified-heading {
+  width: 100%;
+  color: #1f261e;
+  padding-top: 0px;
+  font-weight: 700;
+  line-height: 32px;
+  word-wrap: break-word;
 }
