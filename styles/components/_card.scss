@@ -16,7 +16,6 @@
     }
 
     .card-block {
-
       &:last-of-type {
       }
     }
@@ -41,34 +40,7 @@
     }
   }
   .halton-card.card-icon::before {
-  }
-  .halton-card.card-community.card-icon::before {
     color: #000000 !important;
-    top: 10px;
-  }
-}
-
-.card-community {
-  width: 100%;
-  height: 100%;
-  padding: 30px;
-  justify-content: center;
-  align-items: center;
-  display: inline-flex;
-  &.card-icon {
-    justify-content: left;
-    padding-top: 55px;
-  }
-  &.card-1 {
-    background: #f0f7fe !important;
-  }
-  &.card-2 {
-    background: #fff5ee !important;
-  }
-  &.card-3 {
-    background: #f0fff3 !important;
-  }
-  &.card-4 {
-    background: #fbf2ff !important;
+    top: 15px;
   }
 }

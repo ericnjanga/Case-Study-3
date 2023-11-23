@@ -28,19 +28,15 @@
 }
 .icon-person::before {
   content: "\F8F6";
-  color: #000000 !important;
 }
 .icon-graph-up-arrow::before {
   content: "\F673";
-  color: #000000 !important;
 }
 .icon-thermometer-sun::before {
   content: "\F5D1";
-  color: #000000 !important;
 }
 .icon-award-1::before {
   content: "\F154";
-  color: #000000 !important;
 }
 .icon-cellphone::before {
   content: "\F4E2";
@@ -57,7 +53,6 @@
     content: "\F3E7";
   }
   &.icon-pdf::before {
-    color: #313d2f !important;
     content: "\F63D";
   }
   &.icon-old-phone::before {
