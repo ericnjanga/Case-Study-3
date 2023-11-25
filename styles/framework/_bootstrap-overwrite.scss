@@ -16,7 +16,6 @@
   ul:not(.halton-nav-tabs) a,
   ol a,
   a.text-icon {
-
     &:hover {
     }
   }
@@ -46,10 +45,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.text-color {
-  color: #313d2f !important;
-  text-decoration: underline !important;
+.text-decoration {
+  text-decoration: none;
   &:hover {
-    text-decoration: none !important;
+    text-decoration: underline !important;
   }
 }
