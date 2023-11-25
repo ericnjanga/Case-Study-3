@@ -16,13 +16,8 @@
   ul:not(.halton-nav-tabs) a,
   ol a,
   a.text-icon {
-
     &:hover {
     }
-  }
-  .marg {
-    padding-left: 60px;
-    padding-right: 60px;
   }
 }
 
@@ -50,18 +45,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.text-color {
-  color: #313d2f !important;
-  text-decoration: underline !important;
+.text-decoration {
+  text-decoration: none;
   &:hover {
-    text-decoration: none !important;
+    text-decoration: underline !important;
   }
-}
-.modified-heading {
-  width: 100%;
-  color: #1f261e;
-  padding-top: 0px;
-  font-weight: 700;
-  line-height: 32px;
-  word-wrap: break-word;
 }
