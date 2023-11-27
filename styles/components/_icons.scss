@@ -64,6 +64,12 @@
   &.icon-link::before {
     content: "\F470";
   }
+  &.icon-video::before {
+    content: "\F21C";
+  }
+  &.icon-pdf::before {
+    content: "\F63D";
+  }
 }
 
 .text-icon-after {
