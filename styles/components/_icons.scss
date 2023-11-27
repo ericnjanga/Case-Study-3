@@ -52,9 +52,6 @@
   &.icon-pin::before {
     content: "\F3E7";
   }
-  &.icon-pdf::before {
-    content: "\F63D";
-  }
   &.icon-old-phone::before {
     content: "\F5B4";
   }
@@ -63,9 +60,6 @@
   }
   &.icon-link::before {
     content: "\F470";
-  }
-  &.icon-video::before {
-    content: "\F21C";
   }
   &.icon-pdf::before {
     content: "\F63D";
@@ -84,6 +78,12 @@
   }
   &.icon-link::after {
     content: "\F470";
+  }
+  &.icon-video::after {
+    content: "\F21C";
+  }
+  &.icon-pdf::before {
+    content: "\F63D";
   }
 }
 
