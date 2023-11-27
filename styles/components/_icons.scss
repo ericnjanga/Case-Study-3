@@ -18,8 +18,6 @@
 }
 
 
-
-
 .icon-before {
   &.icon-arrow-right::before {
     content: "\F138";
@@ -39,7 +37,13 @@
   &.icon-link::before {
     content: "\F470";
   }
-
+  // ...
+  &.icon-video::after {
+    content: "\F21C";
+  }
+  &.icon-pdf::before {
+    content: "\F63D";
+  }
   &.icon-info::before {
     content: "\F430";
   }
@@ -72,6 +76,7 @@
   }
 }
 
+
 .icon-after {
   &.icon-arrow-right::after {
     content: "\F138";
@@ -91,7 +96,10 @@
   &.icon-link::after {
     content: "\F470";
   }
-
+  // ...
+  &.icon-video::after {
+    content: "\F21C";
+  }
   &.icon-info::after {
     content: "\F430";
   }
@@ -125,9 +133,6 @@
 }
 
 
-
-
-
 .list-icon-check {
   list-style: none;
   li::before {
@@ -156,8 +161,6 @@
 }
 
 
-
-
 .text-icon, .link-icon {
   position: relative;
 
@@ -175,9 +178,7 @@
 }
 
 
-
 .link-icon {
-
   &::before,
   &::after {
     color: var(--halton-clr-link) !important;
