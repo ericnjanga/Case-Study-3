@@ -11,7 +11,7 @@
     --halton-callout-title-marg: 20px;
     --halton-callout-paragraph-marg: 20px;
     --halton-callout-padding: 40px 20px;
-    --halton-callout-btn-padding: 10px 12px 10px 36px;
+    --halton-callout-btn-padding: 10px 36px;
     --halton-callout-btn-icon-pos: 12px;
     --halton-callout-img-height: 350px;
 }
@@ -43,7 +43,7 @@
         --halton-callout-grid-templ: 1fr / 50% 1fr;
         // --halton-callout-img-height: 450px;
         --halton-callout-padding: 50px 30px;
-        --halton-callout-btn-padding: 18px 36px 18px 46px;
+        --halton-callout-btn-padding: 18px 46px;
         --halton-callout-btn-icon-pos: 18px;
         --halton-callout-title-marg: 25px;
         --halton-callout-paragraph-marg: 30px;
@@ -108,10 +108,15 @@ h2.halton-callout-box__title,
     &:hover {
         --halton-callout-clr-btn: #FFD64F;
     }
+
+    &::before {
+        left: var(--halton-callout-btn-icon-pos);
+    }
+    &::after {
+        right: var(--halton-callout-btn-icon-pos);
+    }
 }
-.halton-callout-box__btn::before {
-    left: var(--halton-callout-btn-icon-pos);
-}
+
 
 
 

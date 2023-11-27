@@ -4,6 +4,7 @@
 
 @layer halton-card {
   .halton-card.card {
+    position: relative;
     background-color: var(--halton-clr-neutral-light);
   }
 
@@ -12,10 +13,9 @@
     border-width: 0;
     border-radius: 0;
 
-
-
+    // ...
     @container (min-width: 500px) {
-        --halton-card-padding: 50px;
+      --halton-card-padding: 50px;
     }
 
     &.card-icon {
