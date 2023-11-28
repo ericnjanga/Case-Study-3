@@ -1,9 +1,14 @@
-
-
-
-
 .modal {
-    .close {
-        border: 4px solid blue!important;
-    }
+  .modal-header {
+    display: flex !important;
+    justify-content: space-between !important;
+    padding-top: 1.5em !important;
+  }
+
+  .close {
+    margin-left: auto !important;
+  }
+  .modal-footer {
+    text-align: left !important;
+  }
 }
