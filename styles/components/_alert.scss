@@ -10,6 +10,9 @@
     --halton-alert-border-left-width: 73px;
     --halton-alert-icon-left-pos: -40px;
     --halton-alert-v-padding: 30px;
+    --halton-alert-footer-mgr: 20px;
+    --halton-alert-footer-direction: row;
+    --halton-alert-footer-gap: 30px;
 }
 
 
@@ -41,6 +44,19 @@
             --halton-alert-icon-left-pos: -40px;
             --halton-alert-v-padding: 15px;
         } 
+
+        .alert-footer {
+            display: flex;
+            flex-direction: var(--halton-alert-footer-direction);
+            gap: var(--halton-alert-footer-gap);
+            margin-top: var(--halton-alert-footer-mgr);
+
+            @container (max-width: 599px) {
+                --halton-alert-footer-direction: column;
+                --halton-alert-footer-gap: 10px;
+                border: 10px solid blue;
+            } 
+        }
     }
 
 

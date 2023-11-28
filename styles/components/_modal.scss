@@ -1,14 +1,22 @@
 .modal {
   .modal-header {
-    display: flex !important;
-    justify-content: space-between !important;
-    padding-top: 1.5em !important;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5em;
+  }
+  .modal-title {
+    flex: 1;
   }
 
   .close {
-    margin-left: auto !important;
+    margin-left: auto;
   }
   .modal-footer {
-    text-align: left !important;
+    font-size: var(--halton-body-font-size);
+
+    // Forced to impose these style becasue of Bootstrap hierarchical superiority
+    text-align: left!important;
+    padding-left: 0!important;
+    padding-right: 0!important;
   }
 }

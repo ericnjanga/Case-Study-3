@@ -19,6 +19,14 @@
     &:hover {
     }
   }
+
+  a {
+    font-size: var(--halton-body-font-size);
+  }
+
+  .is-bold {
+    font-weight: bold;
+  }
 }
 
 /**
