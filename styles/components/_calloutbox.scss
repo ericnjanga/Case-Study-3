@@ -25,41 +25,32 @@
     padding: var(--halton-callout-padding);
     background-color: var(--halton-callout-clr-bg);
 
-
-    @media (min-width: 1400px) {
-        // border: 15px solid rgb(243, 117, 0)!important;
-        --halton-callout-padding: 70px 130px!important;
-        --halton-callout-title-marg: 30px!important;
-        --halton-callout-paragraph-marg: 35px!important;
+    @container (min-width: 1280px) {
+        --halton-callout-padding: 100px 130px!important;
     }
-    @media (min-width: 1200px) and (max-width: (1400px - 1)) {
-        // border: 15px solid rgb(255, 221, 0)!important;
-        --halton-callout-padding: 70px 130px!important;
+    @container  (min-width: 1150px) and (max-width: 1279px) {
+        --halton-callout-padding: 70px 100px;
     }
-    @media (min-width: 992px) {
-        // border: 15px solid lime;
-        --halton-callout-grid-gap: 90px;
+    @container (min-width: 840px) and (max-width: 1149px) {
+        --halton-callout-padding: 50px;
+    }
+    @container (min-width: 840px) {
+        --halton-callout-grid-gap: 50px;
         --halton--callout-wrapper-display: flex;
         --halton-callout-grid-templ: 1fr / 50% 1fr;
-        // --halton-callout-img-height: 450px;
-        --halton-callout-padding: 50px 30px;
         --halton-callout-btn-padding: 18px 46px;
         --halton-callout-btn-icon-pos: 18px;
         --halton-callout-title-marg: 25px;
         --halton-callout-paragraph-marg: 30px;
     }
-    @media (min-width: 768px) and (max-width: (992px - 1)) {
-        // border: 15px solid blue;
-        --halton-callout-padding: 50px 25%;
+    @container (min-width: 600px) and (max-width: 839px) {
+        --halton-callout-padding: 40px 60px;
     }
-    @media (min-width: 576px) and (max-width: (768px - 1)) {
-        // border: 15px solid rgb(228, 0, 240);
-        --halton-callout-padding: 40px 15%;
+    @container (min-width: 400px) and (max-width: 599px) {
+        --halton-callout-padding: 40px 30px;
     }
-    // @media (max-width: (576px - 1px)) {
-    //     border: 15px solid rgb(210, 30, 30);
-    // }
 }
+
 .halton-callout-box__wrapper {
     display: var(--halton--callout-wrapper-display)!important;
     flex-direction: column;

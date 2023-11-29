@@ -1,19 +1,62 @@
 :root {
     --site-title-bottom-spacer: 20px;
-    --site-section-gap: 40px;
     --site-section-gap-sm: 20px;
+    --site-section-gap-md: 60px;
+    --site-section-gap-lg: 120px;
 }
 
 
 @layer section-spacer {
     .top-section-spacer {
-        margin-top: var(--site-section-gap)!important;
+        margin-top: var(--site-section-gap-lg)!important;
     }
     .bottom-section-spacer {
-        margin-bottom: var(--site-section-gap)!important;
+        margin-bottom: var(--site-section-gap-lg)!important;
     }
     .bottom-section-spacer-sm {
         margin-bottom: var(--site-section-gap-sm)!important;
+        // @media (min-width: 1400px) {
+        //     border: 3px solid green;
+        //     --site-section-gap-sm: 60px;
+        // }
+        // @media (min-width: 1200px) and (max-width: (1400px - 1)) {
+        //     border: 3px solid lime;
+        //     --site-section-gap-sm: 50px;
+        // }
+        // @media (min-width: 992px) and (max-width: (1200px - 1)) {
+        //     border: 3px solid blue;
+        //     --site-section-gap-sm: 40px;
+        // }
+        // @media (min-width: 768px) and (max-width: (992px - 1)) {
+        //     border: 3px solid turquoise;
+        //     --site-section-gap-sm: 30px;
+        // }
+    }
+    .bottom-section-spacer-md {
+        margin-bottom: var(--site-section-gap-md)!important;
+        // @media (min-width: 1400px) {
+        //     border: 3px solid green;
+        //     --site-section-gap-md: 60px;
+        // }
+        // @media (min-width: 1200px) and (max-width: (1400px - 1)) {
+        //     border: 3px solid lime;
+        //     --site-section-gap-md: 50px;
+        // }
+        // @media (min-width: 992px) and (max-width: (1200px - 1)) {
+        //     border: 3px solid blue;
+        //     --site-section-gap-md: 40px;
+        // }
+        // @media (min-width: 768px) and (max-width: (992px - 1)) {
+        //     border: 3px solid turquoise;
+        //     --site-section-gap-md: 30px;
+        // }
+    }
+    .bottom-section-spacer-lg {
+        margin-bottom: var(--site-section-gap-lg)!important;
+        // @media (min-width: 1400px) {
+        //     border: 3px solid green;
+        //     --site-section-gap-lg: 120px;
+        // }
     }
     .title-spacer {
         margin-bottom: var(--site-title-bottom-spacer)!important;
@@ -39,12 +82,6 @@
         }
         @media (min-width: 768px) and (max-width: (992px - 1)) {
             --site-footer-bottom-spacer: 40px;
-        }
-    }
-
-    .bottom-section-spacer-sm {
-        @media (min-width: 992px) {
-            --site-section-gap-sm: 40px;
         }
     }
 }

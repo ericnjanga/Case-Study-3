@@ -1,5 +1,8 @@
 :root {
   --halton-card-padding: 20px;
+  --halton-card-padding-top: 20px;
+  --halton-card-icon-padding-top: 65px;
+  --halton-card-icon-top-pos: 15px;
 }
 
 @layer halton-card {
@@ -8,18 +11,29 @@
     background-color: var(--halton-clr-neutral-light);
   }
 
+  // padding-top: 70px;
+
   .halton-card {
-    padding: var(--halton-card-padding);
+    padding-top: var(--halton-card-padding-top);
+    padding-right: var(--halton-card-padding);
+    padding-bottom: var(--halton-card-padding);
+    padding-left: var(--halton-card-padding);
     border-width: 0;
     border-radius: 0;
 
     // ...
     @container (min-width: 500px) {
+      --halton-card-icon-padding-top: 100px;
+      --halton-card-padding-top: 50px;
       --halton-card-padding: 50px;
+      --halton-card-icon-top-pos: 45px;
     }
 
     &.card-icon {
-      padding-top: 55px;
+      padding-top: var(--halton-card-icon-padding-top);
+      &::before {
+        top: var(--halton-card-icon-top-pos);
+      }
     }
 
     .card-block {
@@ -48,6 +62,6 @@
   }
   .halton-card.card-icon::before {
     color: #000000 !important;
-    top: 15px;
+    // top: 15px;
   }
 }

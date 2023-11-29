@@ -25,6 +25,7 @@
     @import 'base/headings';
 }
 @layer components {
+    @import 'components/badge';
     @import 'components/calloutbox';
     @import 'components/collapse';
     @import 'components/modal';
