@@ -1,9 +1,5 @@
 
 :root {
-    --halton-clr-alert-success-bdr: #B9E3A8;
-    --halton-clr-alert-success-bg: #EDF7E9;
-    --halton-clr-alert-warning-bdr: #F9F18C;
-    --halton-clr-alert-warning-bg: #F7F6E9;
     --halton-clr-title: #1F261E;
     --halton-clr-alert-icon: #283627;
 
@@ -68,15 +64,18 @@
     }
     .alert {
         color: #383d41;
+        background-color: var(--halton-clr-neutral-light);
+        border-color: var(--halton-clr-neutral-lightd);
         /* Darkening alert color to ensure WCAG 2.0 Compliance */
     }
     .alert-info {
-        border: 1px solid #d3d6db;
-        background-color: #b5dfff;
+        // border: 1px solid #d3d6db;
+        background-color: var(--halton-clr-alert-info-bg);
+        border-color: var(--halton-clr-alert-info-bdr);
     }
     .alert-success {
-        background-color: var(--halton-clr-alert-success-bg)!important;
-        border-color: var(--halton-clr-alert-success-bdr)!important;
+        background-color: var(--halton-clr-alert-success-bg);
+        border-color: var(--halton-clr-alert-success-bdr);
     }
     .alert-warning {
         background-color: var(--halton-clr-alert-warning-bg)!important;

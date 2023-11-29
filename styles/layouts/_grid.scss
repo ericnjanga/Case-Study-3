@@ -101,10 +101,9 @@
     display: var(--halton-rbeh-display);
     flex-wrap: wrap;
     row-gap: 30px;
-
-    > div {
-        width: 100%;
-    }
+    // > div {
+    //     width: 100%;
+    // }
 }
 .rbeh-item {
     height: 100%;

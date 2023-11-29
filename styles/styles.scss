@@ -16,8 +16,9 @@
 // Layer declared for hierarchy purpose (halton styles)
 @layer halton-2018 {} 
 
-@layer framework {
-    @import 'framework/bootstrap-overwrite';
+@layer bootstrapFramework {
+    // @import 'framework/bootstrap.min';
+    @import 'bootstrapFramework/bootstrap-overwrite';
 }
 @layer base {
     @import 'base/typography';
@@ -45,4 +46,7 @@
     @import 'layouts/grid';
     @import 'layouts/page';
     @import 'layouts/section-spacer';
+}
+@layer designSystem {
+    @import 'designSystem/index';
 }
