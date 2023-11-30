@@ -74,10 +74,10 @@
 
 .gallery-thumb-wrap {
     display: block;
-    background: #fff;
     padding: 3px;
-    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    // background: #fff;
+    // box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
 
     img {
 	    transition: all .35s

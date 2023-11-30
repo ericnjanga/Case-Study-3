@@ -12,6 +12,8 @@
     position: relative;
     bottom: -1px;
     border-bottom: 0px solid #ddd!important;
+    margin-bottom: 0;
+    
     > li.active > a {
         border-radius: 0px!important;
         border: 0px salmon solid!important;
