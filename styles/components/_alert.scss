@@ -41,6 +41,10 @@
             --halton-alert-v-padding: 15px;
         } 
 
+        .component-title {
+            color: var(--halton-clr-title)!important;
+        }
+
         .alert-footer {
             display: flex;
             flex-direction: var(--halton-alert-footer-direction);
@@ -89,10 +93,6 @@
         padding-left: 17px;
     }
 
-
-    .alert-title {
-        color: var(--halton-clr-title)!important;
-    }
 
 
 
