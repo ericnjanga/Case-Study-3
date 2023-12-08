@@ -13,7 +13,9 @@
  *
 **/
 
-// Layer declared for hierarchy purpose (halton styles)
+// Layers hierarchy declaration to help avoid conflicts on the live site
+@layer framework-slick {}
+@layer framework-slick-themme {}
 @layer halton-2018 {} 
 
 @layer bootstrapFramework {

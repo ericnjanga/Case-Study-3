@@ -4,8 +4,9 @@
     --halton-clr-alert-icon: #283627;
 
     --halton-alert-border-left-width: 73px;
-    --halton-alert-icon-left-pos: -40px;
-    --halton-alert-v-padding: 30px;
+    --halton-alert-icon-left-pos: -51px; // icon left position
+    --halton-alert-icon-top-pos: 36px;
+    --halton-alert-v-padding: 40px 20px 40px;
     --halton-alert-footer-mgr: 20px;
     --halton-alert-footer-direction: row;
     --halton-alert-footer-gap: 30px;
@@ -23,22 +24,21 @@
  * ----------
 **/
 @layer alert {
-
-    .alert {
+    
+    .halton-alert {
         position: relative;
-        border-width: 0!important;
+        // border-width: 0!important;
+        border: 0px solid;
         border-left-width: var(--halton-alert-border-left-width)!important;
         border-radius: 0!important;
-        padding-top: var(--halton-alert-v-padding)!important;
-        padding-bottom: var(--halton-alert-v-padding)!important;
-        
-        --halton-alert-icon-left-pos: -51px; // icon left position
+        padding: var(--halton-alert-v-padding);
 
 
         @container (max-width: 540px) {
             --halton-alert-border-left-width: 50px;
+            --halton-alert-icon-top-pos: 17px;
             --halton-alert-icon-left-pos: -40px;
-            --halton-alert-v-padding: 15px;
+            --halton-alert-v-padding: 20px 15px 20px;
         } 
 
         .component-title {
@@ -61,34 +61,37 @@
 
 
     .alert-icon::before {
-        top: 30px;
+        top: var(--halton-alert-icon-top-pos);
         left: var(--halton-alert-icon-left-pos);
         color: var(--halton-clr-alert-icon)!important;
     }
-    .alert {
+    .halton-alert {
         color: #383d41;
         background-color: var(--halton-clr-neutral-light);
         border-color: var(--halton-clr-neutral-lightd);
         /* Darkening alert color to ensure WCAG 2.0 Compliance */
     }
-    .alert-info {
+    .halton-alert-transparent-bdr {
+        border-color: transparent;
+    }
+    .halton-alert.alert-info {
         // border: 1px solid #d3d6db;
         background-color: var(--halton-clr-alert-info-bg);
         border-color: var(--halton-clr-alert-info-bdr);
     }
-    .alert-success {
+    .halton-alert.alert-success {
         background-color: var(--halton-clr-alert-success-bg);
         border-color: var(--halton-clr-alert-success-bdr);
     }
-    .alert-warning {
+    .halton-alert.alert-warning {
         background-color: var(--halton-clr-alert-warning-bg)!important;
         border-color: var(--halton-clr-alert-warning-bdr)!important;
     }
-    .alert-secondary {
+    .halton-alert.alert-secondary {
         border: 1px solid #d3d6db;
         background-color: #e2e3e5;
     }
-    .alert-full-width ul {
+    .halton-alert.alert-full-width ul {
         /* Reducing list spacing to ensure perfect alignment of bullets with content */
         padding-left: 17px;
     }
@@ -116,17 +119,17 @@
     * Note: Custom padding must not be applied directly to ".alert"
     * ----------
     **/
-    .alert-full-width {
+    .halton-alert.alert-full-width {
         @media (min-width: 1400px) {
             padding: 70px;
         }
     }
-    .alert-full-width {
+    .halton-alert.alert-full-width {
         @media (min-width: 1200px) and (max-width: 1399px) {
             padding: 60px;
         }
     }
-    .alert-full-width {
+    .halton-alert .alert-full-width {
         @media (min-width: 992px) and (max-width: 1199px) {
             padding: 50px;
         }
@@ -136,21 +139,15 @@
             padding: 40px;
         }
     }
-    .alert-full-width {
+    .halton-alert.alert-full-width {
         @media (min-width: 576px) and (max-width: 767px) {
             padding: 30px;
         }
     }
-    .alert-full-width {
+    .halton-alert.alert-full-width {
         @media (max-width: 575px) {
             padding: 20px;
         }
     }
 
-
-
 }
-
-
- 
-

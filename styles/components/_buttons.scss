@@ -2,17 +2,51 @@
 :root {
     --halton-clr-btn-primary: #1E552A;
     --halton-clr-btn-primary-hover: #37a14e;
+    --halton-callout-clr-bg: #1E552A;
+    --halton-callout-clr-btn: var(--halton-clr-neutral-light);
+
+    --halton-callout-btn-padding: 10px 36px;
+}
+
+.halton-btn {
+    position: relative;
+    border-radius: 0px!important;
+    font-weight: bold!important;
+    text-transform: uppercase;
+    text-decoration: none!important;
+    transition: all 0.3s;
+    color: var(--halton-clr-text);
+    background-color: var(--halton-callout-clr-btn);
+    padding: var(--halton-callout-btn-padding)!important;
+
+    &:hover {
+        --halton-callout-clr-btn: #FFD64F;
+    }
+
+    &::before {
+        left: var(--halton-callout-btn-icon-pos);
+    }
+    &::after {
+        right: var(--halton-callout-btn-icon-pos);
+    }
 }
 
 .halton-btn-primary {
-    border-radius: 0px!important;
     background-color: var(--halton-clr-btn-primary)!important;
-    text-transform: uppercase;
-    text-decoration: none!important;
     color: #fff!important;
-    padding: 11px 12px!important;
 
     &:hover {
         background-color: var(--halton-clr-btn-primary-hover)!important;
     }
 }
+
+
+.halton-btn-primary-xxx {
+    color: var(--halton-callout-clr-bg)!important;
+    background-color: var(--halton-callout-clr-btn)!important;
+
+    &:hover {
+        --halton-callout-clr-btn: #FFD64F;
+    }
+}
+

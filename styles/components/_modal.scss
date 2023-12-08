@@ -1,9 +1,35 @@
-.modal {
+:root {
+  --halton-modal-header-padding: 30px 30px 15px 30px;
+  --halton-modal-body-padding: 15px 30px 30px 30px;
+  --halton-modal-footer-padding: 10px 30px 30px 30px;
+  --halton-modal-footer-margin: 0px;
+  --halton-modal-footer-padding-hover: #37a14e;
+}
+
+
+
+.halton-modal {
+  .modal-content {
+    border-radius: 0;
+  }
+
+  // border: 10px solid red!important;
+
   .modal-header {
     display: flex;
     justify-content: space-between;
-    padding-top: 1.5em;
+    padding: var(--halton-modal-header-padding);
   }
+
+  .modal-header,
+  .modal-footer {
+    border: 0;
+  }
+
+  .modal-body {
+    padding: var(--halton-modal-body-padding);
+  }
+
   .modal-title {
     flex: 1;
   }
@@ -11,12 +37,22 @@
   .close {
     margin-left: auto;
   }
+
   .modal-footer {
     font-size: var(--halton-body-font-size);
 
     // Forced to impose these style becasue of Bootstrap hierarchical superiority
-    text-align: left!important;
-    padding-left: 0!important;
-    padding-right: 0!important;
+    text-align: left !important;
+    padding: var(--halton-modal-footer-padding)!important;
+    margin-top: var(--halton-modal-footer-margin);
+  }
+
+
+
+
+  @media (max-width: (576px - 1px)) {
+    --halton-modal-header-padding: 15px 15px 7.5px 15px;
+    --halton-modal-body-padding: 7.5px 15px 15px 15px;
+    --halton-modal-footer-margin: 30px;
   }
 }

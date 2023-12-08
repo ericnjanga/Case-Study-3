@@ -1,8 +1,5 @@
 :root {
-    --halton-callout-clr-bg: #1E552A;
-    --halton-callout-clr-btn: #fff;
     --halton-callout-clr-text: #CEE3C5;
-    
     --halton-callout-clr-subtitle: #FFD64F;
 
     --halton-callout-grid-gap: 30px;
@@ -11,7 +8,6 @@
     --halton-callout-title-marg: 20px;
     --halton-callout-paragraph-marg: 20px;
     --halton-callout-padding: 40px 20px;
-    --halton-callout-btn-padding: 10px 36px;
     --halton-callout-btn-icon-pos: 12px;
     --halton-callout-img-height: 350px;
 }
@@ -58,7 +54,8 @@
     p {
         margin-bottom: var( --halton-callout-paragraph-marg)!important;
     }
-    .halton-callout-box__btn {
+    .btn,
+    .halton-btn {
         width: fit-content;
     }
 }
@@ -84,31 +81,6 @@ h2.halton-callout-box__title,
     height: var(--halton-callout-img-height);
     object-position: center top; /* Centers the image horizontally and aligns it to the top vertically */
 }
-
-.halton-callout-box__btn {
-    position: relative;
-    color: var(--halton-callout-clr-bg)!important;
-    padding: var(--halton-callout-btn-padding)!important;
-    font-weight: bold!important;
-    border-radius: 0!important;
-    text-transform: uppercase;
-    text-decoration: none!important;
-    background-color: var(--halton-callout-clr-btn)!important;
-    transition: all 0.3s;
-
-    &:hover {
-        --halton-callout-clr-btn: #FFD64F;
-    }
-
-    &::before {
-        left: var(--halton-callout-btn-icon-pos);
-    }
-    &::after {
-        right: var(--halton-callout-btn-icon-pos);
-    }
-}
-
-
 
 
 
