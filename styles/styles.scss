@@ -40,10 +40,12 @@
     @import 'components/thumbnails';
     @import 'components/timeline';
     @import 'components/mix';
-    @import 'components/sidebar';
     @import 'components/share-buttons';
     @import 'components/card';
     @import 'components/buttons';
+}
+@layer themes {
+    @import 'themes/themes';
 }
 @layer layouts {
     @import 'layouts/grid';

@@ -1,0 +1,51 @@
+:root {}
+
+@layer themes {
+  .theme-info {
+    background-color: var(--halton-clr-info-bg);
+
+    &.halton-alert {
+      border-color: var(--halton-clr-info-bdr);
+    }
+  }
+
+  .theme-success {
+    background-color: var(--halton-clr-success-bg);
+
+    &.halton-alert {
+      border-color: var(--halton-clr-success-bdr);
+    }
+  }
+
+  .theme-warning {
+    background-color: var(--halton-clr-warning-bg);
+
+    &.halton-alert {
+      border-color: var(--halton-clr-warning-bdr);
+    }
+  }
+
+  .theme-infrastructure {
+    background-color: var(--halton-clr-infrastructure-bg);
+
+    &.halton-alert {
+      border-color: var(--halton-clr-infrastructure-bdr);
+    }
+  }
+
+  .theme-excellence {
+    background-color: var(--halton-clr-excellence-bg);
+
+    &.halton-alert {
+      border-color: var(--halton-clr-excellence-bdr);
+    }
+  }
+
+  .theme-emergency {
+    background-color: var(--halton-clr-emergency-bg);
+
+    &.halton-alert {
+      border-color: var(--halton-clr-emergency-bdr);
+    }
+  }
+}

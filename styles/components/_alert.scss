@@ -5,6 +5,7 @@
 
     --halton-alert-border-left-width: 73px;
     --halton-alert-icon-left-pos: -51px; // icon left position
+    --halton-alert-icon-display: block;
     --halton-alert-icon-top-pos: 36px;
     --halton-alert-v-padding: 40px 20px 40px;
     --halton-alert-footer-mgr: 20px;
@@ -20,7 +21,7 @@
 /**
  *
  * Alert box new styling
- * Note: "alert" and "alert-info" are Bootstrap classes
+ * Note: "alert" and "theme-info" are Bootstrap classes
  * ----------
 **/
 @layer alert {
@@ -29,17 +30,25 @@
         position: relative;
         // border-width: 0!important;
         border: 0px solid;
-        border-left-width: var(--halton-alert-border-left-width)!important;
+        border-left-width: var(--halton-alert-border-left-width);
         border-radius: 0!important;
         padding: var(--halton-alert-v-padding);
 
 
-        @container (max-width: 540px) {
+        @container (max-width: 250px) {
+            --halton-alert-border-left-width: 0;
+            --halton-alert-icon-display: none;
+        }
+
+        @container (min-width: 251px) and (max-width: 540px) {
             --halton-alert-border-left-width: 50px;
             --halton-alert-icon-top-pos: 17px;
             --halton-alert-icon-left-pos: -40px;
-            --halton-alert-v-padding: 20px 15px 20px;
         } 
+
+        @container (max-width: 540px) {
+            --halton-alert-v-padding: 20px 15px 20px;
+        }
 
         .component-title {
             color: var(--halton-clr-title)!important;
@@ -61,6 +70,7 @@
 
 
     .alert-icon::before {
+        display: var(--halton-alert-icon-display);
         top: var(--halton-alert-icon-top-pos);
         left: var(--halton-alert-icon-left-pos);
         color: var(--halton-clr-alert-icon)!important;
@@ -68,29 +78,26 @@
     .halton-alert {
         color: #383d41;
         background-color: var(--halton-clr-neutral-light);
-        border-color: var(--halton-clr-neutral-lightd);
+        border-color: var(--halton-clr-neutral-light-bdr);
         /* Darkening alert color to ensure WCAG 2.0 Compliance */
     }
     .halton-alert-transparent-bdr {
         border-color: transparent;
+        
+        --halton-alert-icon-top-pos: 14px;
+        --halton-alert-icon-left-pos: -30px;
+
+        @container (min-width: 541px) {
+            --halton-alert-icon-top-pos: 30px;
+            --halton-alert-icon-left-pos: -37px;
+        }
     }
-    .halton-alert.alert-info {
-        // border: 1px solid #d3d6db;
-        background-color: var(--halton-clr-alert-info-bg);
-        border-color: var(--halton-clr-alert-info-bdr);
-    }
-    .halton-alert.alert-success {
-        background-color: var(--halton-clr-alert-success-bg);
-        border-color: var(--halton-clr-alert-success-bdr);
-    }
-    .halton-alert.alert-warning {
-        background-color: var(--halton-clr-alert-warning-bg)!important;
-        border-color: var(--halton-clr-alert-warning-bdr)!important;
-    }
-    .halton-alert.alert-secondary {
-        border: 1px solid #d3d6db;
-        background-color: #e2e3e5;
-    }
+ 
+
+    // .halton-alert.alert-secondary {
+    //     border: 1px solid #d3d6db;
+    //     background-color: #e2e3e5;
+    // }
     .halton-alert.alert-full-width ul {
         /* Reducing list spacing to ensure perfect alignment of bullets with content */
         padding-left: 17px;

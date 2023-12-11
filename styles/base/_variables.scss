@@ -1,6 +1,4 @@
 :root {
-    --halton-clr-neutral-light: #F3F3F3; // #EDEDED;
-    --halton-clr-neutral-lightd: #cbcaca; // Darker
     --halton-clr-neutral-accent: #DEDEDE;
     --halton-clr-neutral-accent-text: #232F22;
     --halton-clr-background-active2: #E1EFEF;
@@ -12,10 +10,19 @@
     --halton-body-font-size: 16px;
 
 
-    --halton-clr-alert-success-bg: #EDF7E9;
-    --halton-clr-alert-success-bdr: #B9E3A8;
-    --halton-clr-alert-warning-bg: #F7F6E9;
-    --halton-clr-alert-warning-bdr: #F9F18C;
-    --halton-clr-alert-info-bg: #D9ECF7;
-    --halton-clr-alert-info-bdr: #96D1F3;
+    --halton-clr-neutral-light: #F3F3F3; // #EDEDED;
+    --halton-clr-success-bg: #E7F7E1;
+    --halton-clr-warning-bg: #F7F3E1;
+    --halton-clr-info-bg: #E1EFF7;
+    --halton-clr-infrastructure-bg: #F7EAE1;
+    --halton-clr-excellence-bg: #F1E1F7;
+    --halton-clr-emergency-bg: #F7E1E1;
+
+    --halton-clr-neutral-light-bdr: #C3C3C3;
+    --halton-clr-success-bdr: #9ED986;
+    --halton-clr-warning-bdr: #D9D386;
+    --halton-clr-info-bdr: #86BBD9;
+    --halton-clr-infrastructure-bdr: #D9A986;
+    --halton-clr-excellence-bdr: #C286D9;
+    --halton-clr-emergency-bdr: #D9868A;
 }
