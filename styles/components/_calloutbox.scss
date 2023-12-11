@@ -51,8 +51,15 @@
     display: var(--halton--callout-wrapper-display)!important;
     flex-direction: column;
     justify-content: center;
+
     p {
-        margin-bottom: var( --halton-callout-paragraph-marg)!important;
+        margin-bottom: var(--halton-callout-paragraph-marg)!important;
+        a {
+            color: var(--halton-callout-clr-subtitle);
+            &.link-icon::before, &.link-icon::after {
+                color: var(--halton-callout-clr-subtitl);
+            }
+        }
     }
     .btn,
     .halton-btn {
