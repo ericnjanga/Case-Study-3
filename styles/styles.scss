@@ -15,16 +15,17 @@
 
 // Layers hierarchy declaration to help avoid conflicts on the live site
 @layer framework-slick {}
-@layer framework-slick-themme {}
+@layer framework-slick-theme {}
+@layer halton-SDM {} 
 @layer halton-2018 {} 
 
 @layer bootstrapFramework {
-    // @import 'framework/bootstrap.min';
     @import 'bootstrapFramework/bootstrap-overwrite';
 }
 @layer base {
     @import 'base/typography';
     @import 'base/headings';
+    @import 'base/utilities';
 }
 @layer components {
     @import 'components/badge';
