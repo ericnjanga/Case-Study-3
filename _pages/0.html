@@ -16,7 +16,7 @@
     <style>
         /* Define smooth scrolling behavior */
         html {
-          scroll-behavior: smooth;
+            scroll-behavior: smooth;
         }
     </style>
 </head>
@@ -50,34 +50,43 @@
                         <a class="nav-link" href="#section-equheight">Equal Height Sections</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Components <span class="caret"></span>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Components <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#section-alerts">Alerts</a></li>
-                          <li><a class="dropdown-item" href="#section-cards">Cards</a></li>
-                          <li><a class="dropdown-item" href="#section-digitservcall">Digital Service Callout</a></li>
-                          <li><a class="dropdown-item" href="#section-tabs">Tabs</a></li>
-                          <li><a class="dropdown-item" href="#section-mediarow">Media row</a></li>
-                          <li><a class="dropdown-item" href="#section-modal">Modal</a></li>
-                          <li><a class="dropdown-item" href="#section-accordion">Accordion</a></li>
-                          <li><a class="dropdown-item" href="#section-timeline">Timeline</a></li>
-                          <li><a class="dropdown-item" href="#section-sidebar">Sidebar</a></li>
-                          <!-- <li><hr class="dropdown-divider"></li>
+                            <li class="disabled"><a class="dropdown-item">Alerts</a></li>
+                            <li><a class="dropdown-item" href="#section-alerts">Defaut alerts</a></li>
+                            <li><a class="dropdown-item" href="#section-alerttypes">Variety of alerts</a></li>
+                            <li role="separator" class="divider"></li>
+
+                            <li class="disabled"><a class="dropdown-item">Cards</a></li>
+                            <li><a class="dropdown-item" href="#section-cards">Defaut cards</a></li>
+                            <li><a class="dropdown-item" href="#section-cardtypes">Variety of cards</a></li>
+                            <li role="separator" class="divider"></li>
+
+                            <li><a class="dropdown-item" href="#section-digitservcall">Digital Service Callout</a></li>
+                            <li><a class="dropdown-item" href="#section-tabs">Tabs</a></li>
+                            <li><a class="dropdown-item" href="#section-mediarow">Media row</a></li>
+                            <li><a class="dropdown-item" href="#section-modal">Modal</a></li>
+                            <li><a class="dropdown-item" href="#section-accordion">Accordion</a></li>
+                            <li><a class="dropdown-item" href="#section-timeline">Timeline</a></li>
+                            <li><a class="dropdown-item" href="#section-sidebar">Sidebar</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li>
                           <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                         </ul>
-                      </li>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
 
-    
-    
 
 
-    
+
+
+
 
 
 
@@ -85,151 +94,81 @@
 
 
     <div class="halton-features-wrapper container-fluid">
-
-    
-
         <header id="intro" class="ds-head">
             <div class="container">
                 <h1 class="ds-head-h1">Design system</h1>
-                <div class="">
-                    <div class="">
-                        <p>Halton's Design System is created to provide a stable and detailed documentation, to symplify the usage of custom components, and to facilitate their implementation by any content creator.</p>
-                    </div>
+                <div class=""> 
+                    <p>Halton's Design System is created to provide a stable and detailed documentation, to symplify
+                        the usage of custom components, and to facilitate their implementation by any content
+                        creator.</p>
+                    <p> <span class="badge badge-primary">Scroll over the component to copy the code.</span></p>
                 </div>
             </div>
         </header>
-
-
-
-
-
 
 
         <div id="section-buttons" class="demoBoxes">
             <div class="container">
 
                 <div class="row bottom-section-spacer-sm">
-                    <div class="col-md-6 bottom-section-spacer-sm">
+                    <div class="col-md-7 bottom-section-spacer-sm">
                         <h2 class="ds-head-h2">
                             Buttons
                         </h2>
                         <p>Custom buttons created for the Halton brand. Icons can be changed at will by using any
-                            icon <a href="#section-icons">classes listed below</a>. Icon can be moved left and right by using the class <code>icon-before</code> or <code>icon-after</code>. The primary button is acheived by adding the class <code>halton-btn-primary</code></p>
-                       
+                            icon <a href="#section-icons">classes listed below</a>. Icon can be moved left and right by
+                            using the class <code>icon-before</code> or <code>icon-after</code>. The primary button is
+                            acheived by adding the class <code>halton-btn-primary</code></p>
                     </div>
                 </div>
-
-
-
-
-                <div class="row bottom-section-spacer-sm">
-                <nav class="navbar navbar-default">
-                    <div class="container-fluid">
-                      <!-- Brand and toggle get grouped for better mobile display -->
-                      <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                          <span class="sr-only">Toggle navigation</span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">Brand</a>
-                      </div>
-                  
-                      <!-- Collect the nav links, forms, and other content for toggling -->
-                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                          <li><a href="#">Link</a></li>
-                          <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">Action</a></li>
-                              <li><a href="#">Another action</a></li>
-                              <li><a href="#">Something else here</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li><a href="#">Separated link</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li><a href="#">One more separated link</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                        <form class="navbar-form navbar-left">
-                          <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                          </div>
-                          <button type="submit" class="btn btn-default">Submit</button>
-                        </form>
-                        <ul class="nav navbar-nav navbar-right">
-                          <li><a href="#">Link</a></li>
-                          <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                              <li><a href="#">Action</a></li>
-                              <li><a href="#">Another action</a></li>
-                              <li><a href="#">Something else here</a></li>
-                              <li role="separator" class="divider"></li>
-                              <li><a href="#">Separated link</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div><!-- /.navbar-collapse -->
-                    </div><!-- /.container-fluid -->
-                  </nav>
-                </div>
-
-
-
-
-
-
 
                 <div class="row">
                     <div class="col-md-4">
-                        <h3 class="component-title">Default</h3>
+                        <h3 class="component-title">Types</h3>
+
                         <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
-                            <a href="#" class="btn halton-btn">button messsage</a>
+                            <a href="#" class="btn halton-btn">Default button</a>
                         </div>
 
                         <br>
-                        <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                            title="Click to copy HTML">
-                            <a href="#" class="btn halton-btn text-icon icon-before icon-arrow-right">button
-                                messsage</a>
-                        </div>
 
-                        <br>
                         <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
-                            <a href="#" class="btn halton-btn text-icon icon-after icon-arrow-right">button
-                                messsage</a>
+                            <a href="#" class="btn halton-btn halton-btn-primary">Primary button</a>
                         </div>
                     </div>
 
                     <div class="col-md-4">
-                        <h3 class="component-title">Primary Buttons</h3>
-                        <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                            title="Click to copy HTML">
-                            <a href="#" class="btn halton-btn halton-btn-primary">button messsage</a>
+                        <h3 class="component-title">With icons</h3>
+
+                        <div style="display: flex; gap: 20px;">
+                            <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                                title="Click to copy HTML">
+                                <a href="#" class="btn halton-btn text-icon icon-before icon-arrow-right">Default button</a>
+                            </div>
+
+                            <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                                title="Click to copy HTML">
+                                <a href="#"
+                                    class="btn halton-btn halton-btn-primary text-icon icon-before icon-arrow-right">Primary button</a>
+                            </div>
                         </div>
 
                         <br>
 
-                        <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                            title="Click to copy HTML">
-                            <a href="#"
-                                class="btn halton-btn halton-btn-primary text-icon icon-before icon-arrow-right">button
-                                messsage</a>
-                        </div>
 
-                        <br>
+                        <div style="display: flex; gap: 20px;">
+                            <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                                title="Click to copy HTML">
+                                <a href="#" class="btn halton-btn text-icon icon-after icon-arrow-right">Default button</a>
+                            </div>
 
-                        <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                            title="Click to copy HTML">
-                            <a href="#"
-                                class="btn halton-btn halton-btn-primary text-icon icon-after icon-arrow-right">button
-                                messsage</a>
+                            <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                                title="Click to copy HTML">
+                                <a href="#"
+                                    class="btn halton-btn halton-btn-primary text-icon icon-after icon-arrow-right">Primary button</a>
+                            </div>
                         </div>
                     </div>
 
@@ -238,27 +177,22 @@
         </div>
 
 
-
-
-
-
-
-
         <div id="section-links" class="demoBoxes">
             <div class="container">
 
                 <div class="row bottom-section-spacer-sm">
-                    <div class="col-md-6 bottom-section-spacer-sm">
+                    <div class="col-md-7 bottom-section-spacer-sm">
                         <h2 class="ds-head-h2">
                             Links
                         </h2>
-                        <p>Links are easily customizable as they can be combined with <a href="#">icons</a>, with their appearance easily adjusted (underline, bold, ...).</p>
+                        <p>Links are easily customizable as they can be combined with <a href="#">icons</a>, with their
+                            appearance easily adjusted (underline, bold, ...).</p>
 
                         <p>Let's suppose your link connects to a PDF, adding the following code will help screen
                             readers understand the link's context.
                             <code>&lt;span class="sr-only"&gt;(PDF link)&lt;/span&gt;</code>
                         </p>
-                       
+
                     </div>
                 </div>
 
@@ -292,8 +226,8 @@
 
                         <span class="elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
-                            <a class="link-icon icon-before icon-pdf" href="#">Link message <span
-                                    class="sr-only">(PDF link)</span></a>
+                            <a class="link-icon icon-before icon-pdf" href="#">Link message <span class="sr-only">(PDF
+                                    link)</span></a>
                         </span>
 
                         <br>
@@ -301,8 +235,8 @@
 
                         <span class="elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
-                            <a class="link-icon icon-after icon-pdf" href="#">Link message <span
-                                    class="sr-only">(PDF link)</span></a>
+                            <a class="link-icon icon-after icon-pdf" href="#">Link message <span class="sr-only">(PDF
+                                    link)</span></a>
                         </span>
                     </div>
 
@@ -310,8 +244,8 @@
                         <h3 class="component-title">Combined styles</h3>
                         <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
-                            <p><a class="link-icon icon-before link-underlined icon-mail" href="#">Lorem ipsum dolor sit <span
-                                        class="sr-only">(PDF link)</span></a> amet
+                            <p><a class="link-icon icon-before link-underlined icon-mail" href="#">Lorem ipsum dolor sit
+                                    <span class="sr-only">(PDF link)</span></a> amet
                                 consectetur. Corporis fugit error nihil vel? Rem magni <a
                                     class="link-icon icon-before icon-summary is-bold" href="#">ea accusamus cum
                                     pariatur</a> eum veniam! Lorem ipsum dolor adipisicing elit. <a
@@ -344,12 +278,9 @@
                 </div>
             </div>
         </div>
-        
-
 
 
         <div id="section-spacing" class="demoBoxes">
-
             <style>
                 p.demo-p {
                     border: 1px solid #37a14e;
@@ -358,48 +289,58 @@
 
             <div class="container">
                 <div class="row bottom-section-spacer-sm">
-                    <div class="col-md-6 bottom-section-spacer-sm">
+                    <div class="col-md-7 bottom-section-spacer-sm">
                         <h2 class="ds-head-h2">
                             Spacing
                         </h2>
-                        <p>Spacing classes help create a standard for spacing between HTML elements. This brings visual order and contributes to a pleasing User Experience. There is three types of spacing:</p>
-                        <p>Small <code>bottom-section-spacer-sm</code>, Medium <code>bottom-section-spacer-md</code>, Large <code>bottom-section-spacer-lg</code>.</p>
+                        <p>Spacing classes help create a standard for spacing between HTML elements. This brings visual
+                            order and contributes to a pleasing User Experience. There is three types of spacing:</p>
+                        <p>Small <code>bottom-section-spacer-sm</code>, Medium <code>bottom-section-spacer-md</code>,
+                            Large <code>bottom-section-spacer-lg</code>.</p>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-3">
                         <h3 class="component-title">No spacing</h3>
-                        <p class="demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit dignissimos
+                        <p class="demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                            dignissimos
                             quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
-                        <p class="demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit dignissimos
+                        <p class="demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                            dignissimos
                             quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
                     </div>
 
                     <div class="col-md-3">
                         <h3 class="component-title">Small spacing</h3>
-                        <p class="bottom-section-spacer-sm demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="bottom-section-spacer-sm demo-p">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
                             Voluptatum fugit dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!
                         </p>
-                        <p class="demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit dignissimos
+                        <p class="demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                            dignissimos
                             quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
                     </div>
 
                     <div class="col-md-3">
                         <h3 class="component-title">Medium spacing</h3>
-                        <p class="bottom-section-spacer-md demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="bottom-section-spacer-md demo-p">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
                             Voluptatum fugit dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!
                         </p>
-                        <p class="demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit dignissimos
+                        <p class="demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                            dignissimos
                             quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
                     </div>
 
                     <div class="col-md-3">
                         <h3 class="component-title">Large spacing</h3>
-                        <p class="bottom-section-spacer-lg demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        <p class="bottom-section-spacer-lg demo-p">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.
                             Voluptatum fugit dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!
                         </p>
-                        <p class="demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit dignissimos
+                        <p class="demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                            dignissimos
                             quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
                     </div>
                 </div>
@@ -407,12 +348,7 @@
         </div>
 
 
-
-
-
-
         <div id="section-icons" class="demoBoxes">
-
             <style>
                 .demo-table>thead>tr>th,
                 .demo-table>tbody>tr>td,
@@ -423,6 +359,7 @@
                 .demo-table .halton-card.card {
                     background-color: transparent;
                 }
+
                 .demo-table .badge {
                     color: black;
                     font-size: small;
@@ -431,9 +368,8 @@
             </style>
 
             <div class="container">
-
                 <div class="row bottom-section-spacer-sm">
-                    <div class="col-md-6 bottom-section-spacer-sm">
+                    <div class="col-md-7 bottom-section-spacer-sm">
                         <h2 class="ds-head-h2">
                             Icons
                         </h2>
@@ -443,156 +379,152 @@
                 </div>
 
 
-
-
-
                 <table class="table demo-table">
                     <thead>
-                      <tr>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                        <th scope="col"></th>
-                      </tr>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th>
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-arrow-right"></div>
-                                <span class="badge badge-secondary">icon-arrow-right</span>
-                            </div>
-                        </th>
-                        <td>
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-pin"></div>
-                                <span class="badge badge-secondary">icon-pin</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-pdf"></div>
-                                <span class="badge badge-secondary">icon-pdf</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-old-phone"></div>
-                                <span class="badge badge-secondary">icon-old-phone</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-external"></div>
-                                <span class="badge badge-secondary">icon-external</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-mapping"></div>
-                                <span class="badge badge-secondary">icon-mapping</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-mapping"></div>
-                                <span class="badge badge-secondary">icon-mapping</span>
-                            </div>
-                        </td>
-                      </tr>
+                        <tr>
+                            <th>
+                                <div class="halton-card card text-center">
+                                    <div class="demo-icon link-icon icon-big icon-before icon-arrow-right"></div>
+                                    <span class="badge badge-secondary">icon-arrow-right</span>
+                                </div>
+                            </th>
+                            <td>
+                                <div class="halton-card card text-center">
+                                    <div class="demo-icon link-icon icon-big icon-before icon-pin"></div>
+                                    <span class="badge badge-secondary">icon-pin</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="halton-card card text-center">
+                                    <div class="demo-icon link-icon icon-big icon-before icon-pdf"></div>
+                                    <span class="badge badge-secondary">icon-pdf</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="halton-card card text-center">
+                                    <div class="demo-icon link-icon icon-big icon-before icon-old-phone"></div>
+                                    <span class="badge badge-secondary">icon-old-phone</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="halton-card card text-center">
+                                    <div class="demo-icon link-icon icon-big icon-before icon-external"></div>
+                                    <span class="badge badge-secondary">icon-external</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="halton-card card text-center">
+                                    <div class="demo-icon link-icon icon-big icon-before icon-mapping"></div>
+                                    <span class="badge badge-secondary">icon-mapping</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="halton-card card text-center">
+                                    <div class="demo-icon link-icon icon-big icon-before icon-mapping"></div>
+                                    <span class="badge badge-secondary">icon-mapping</span>
+                                </div>
+                            </td>
+                        </tr>
 
-                      <tr>
-                        <th scope="row">
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-warning"></div>
-                                <span class="badge badge-secondary">icon-warning</span>
-                            </div>
-                        </th>
-                        <td> 
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-link"></div>
-                                <span class="badge badge-secondary">icon-link</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-video"></div>
-                                <span class="badge badge-secondary">icon-video</span>
-                            </div>
-                        </td>
-                        <td> 
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-info"></div>
-                                <span class="badge badge-secondary">icon-info</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-summary"></div>
-                                <span class="badge badge-secondary">icon-summary</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-mail"></div>
-                                <span class="badge badge-secondary">icon-mail</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-cellphone"></div>
-                                <span class="badge badge-secondary">icon-cellphone</span>
-                            </div>
-                        </td>
-                      </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="halton-card card text-center">
+                                    <div class="demo-icon link-icon icon-big icon-before icon-warning"></div>
+                                    <span class="badge badge-secondary">icon-warning</span>
+                                </div>
+                            </th>
+                            <td>
+                                <div class="halton-card card text-center">
+                                    <div class="demo-icon link-icon icon-big icon-before icon-link"></div>
+                                    <span class="badge badge-secondary">icon-link</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="halton-card card text-center">
+                                    <div class="demo-icon link-icon icon-big icon-before icon-video"></div>
+                                    <span class="badge badge-secondary">icon-video</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="halton-card card text-center">
+                                    <div class="demo-icon link-icon icon-big icon-before icon-info"></div>
+                                    <span class="badge badge-secondary">icon-info</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="halton-card card text-center">
+                                    <div class="demo-icon link-icon icon-big icon-before icon-summary"></div>
+                                    <span class="badge badge-secondary">icon-summary</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="halton-card card text-center">
+                                    <div class="demo-icon link-icon icon-big icon-before icon-mail"></div>
+                                    <span class="badge badge-secondary">icon-mail</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="halton-card card text-center">
+                                    <div class="demo-icon link-icon icon-big icon-before icon-cellphone"></div>
+                                    <span class="badge badge-secondary">icon-cellphone</span>
+                                </div>
+                            </td>
+                        </tr>
 
-                      <tr>
-                        <th scope="row">
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-person"></div>
-                                <span class="badge badge-secondary">icon-person</span>
-                            </div>
-                        </th>
-                        <td>
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-graph-up-arrow"></div>
-                                <span class="badge badge-secondary">icon-graph-up-arrow</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-thermometer-sun"></div>
-                                <span class="badge badge-secondary">icon-thermometer-sun</span>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-award-1"></div>
-                                <span class="badge badge-secondary">icon-award-1</span>
-                            </div>
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
+                        <tr>
+                            <th scope="row">
+                                <div class="halton-card card text-center">
+                                    <div class="demo-icon link-icon icon-big icon-before icon-person"></div>
+                                    <span class="badge badge-secondary">icon-person</span>
+                                </div>
+                            </th>
+                            <td>
+                                <div class="halton-card card text-center">
+                                    <div class="demo-icon link-icon icon-big icon-before icon-graph-up-arrow"></div>
+                                    <span class="badge badge-secondary">icon-graph-up-arrow</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="halton-card card text-center">
+                                    <div class="demo-icon link-icon icon-big icon-before icon-thermometer-sun"></div>
+                                    <span class="badge badge-secondary">icon-thermometer-sun</span>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="halton-card card text-center">
+                                    <div class="demo-icon link-icon icon-big icon-before icon-award-1"></div>
+                                    <span class="badge badge-secondary">icon-award-1</span>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
                     </tbody>
                 </table>
- 
+
             </div>
         </div>
 
 
-
-
-
-        <div id="section-equheight" class="demoBoxes">  
+        <div id="section-equheight" class="demoBoxes">
             <div class="container">
-                <div class="row bottom-section-spacer-md">
-                    <div class="col-md-6 col-md-offset-3 text-center">
-                        <h1 class="component-title">Columns of equal height</h1>
+                <div class="row bottom-section-spacer-sm">
+                    <div class="col-md-7 bottom-section-spacer-sm">
+                        <h2 class="ds-head-h2">
+                            Columns of equal height
+                        </h2>
                         <p>Elements of the same row can have equal height. For this, you need to add the class
                             <code>rbeh</code> to <code>class="row ..."</code>
                             then you need to add the class <code>rbeh-item</code> to the element inside each column.
@@ -600,8 +532,6 @@
                         </p>
                     </div>
                 </div>
-
-
 
                 <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
                     title="Click to copy HTML">
@@ -616,7 +546,7 @@
 
                         <section class="col-md-3 col-lg-offset-1 bx-container">
                             <aside
-                                class="halton-alert halton-alert-transparent-bdr alert-icon icon-before icon-big icon-summary bottom-section-spacer rbeh-item">
+                                class="halton-alert halton-alert-transparent-bdr alert-icon icon-before icon-big icon-summary rbeh-item">
                                 <h3 class="component-title bottom-section-spacer-sm">Sidebar title</h3>
 
                                 <h4>Subtitle</h4>
@@ -631,9 +561,7 @@
                                 <div class="bottom-section-spacer-md">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto
                                         deleniti hic eius
-                                        explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic,
-                                        molestiae rem
-                                        suscipit sint eius, alias officiis.</p>
+                                        explicabo corporis.</p>
                                 </div>
 
                                 <div>
@@ -660,210 +588,173 @@
                     </div>
                 </div>
 
-            </div> 
+            </div>
         </div>
-
-
-
-
 
 
         <div id="section-alerts" class="demoBoxes">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3 text-center bottom-section-spacer-md">
-                        <h1 class="component-title text-center">
+                <div class="row bottom-section-spacer-sm">
+                    <div class="col-md-7 bottom-section-spacer-sm">
+                        <h2 class="ds-head-h2">
                             Alerts
-                        </h1>
-                        <h2 class="component-title">Default alerts</h2>
-                        <div>
-                            <span class="badge badge-primary">Introduction text needed</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
-                            explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
-                            suscipit sint eius, alias officiis.</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                            title="Click to copy HTML">
-                            <div class="halton-alert bottom-section-spacer-sm">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                            title="Click to copy HTML">
-                            <div
-                                class="halton-alert alert-icon icon-before icon-info icon-big bottom-section-spacer-sm">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                            title="Click to copy HTML">
-                            <div class="halton-alert bottom-section-spacer-sm">
-                                <h2 class="alert-title component-title">Alert Title</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                    dignissimos quisquam perspiciatis nisi!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                            title="Click to copy HTML">
-                            <div class="halton-alert bottom-section-spacer-sm">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                    dignissimos quisquam perspiciatis nisi!</p>
-
-                                <div class="alert-footer">
-                                    <a class="link-icon icon-before icon-pdf" href="#">Link message</a>
-                                    <a class="link-icon icon-before icon-pdf" href="#">Link message</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row bottom-section-spacer-md">
-                    <div class="col-md-6">
-                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                            title="Click to copy HTML">
-                            <div class="halton-alert bottom-section-spacer-sm">
-                                <h2 class="component-title">Alert Title</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                    dignissimos quisquam perspiciatis nisi!</p>
-
-                                <div class="alert-footer">
-                                    <a class="link-icon icon-before icon-pdf" href="#">Link message</a>
-                                    <a class="link-icon icon-before icon-pdf" href="#">Link message</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                            title="Click to copy HTML">
-                            <div
-                                class="halton-alert alert-icon icon-before icon-info icon-big bottom-section-spacer-sm">
-                                <h2 class="component-title">Alert Title</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                    dignissimos quisquam perspiciatis nisi!</p>
-
-                                <div class="alert-footer">
-                                    <a class="link-icon icon-before icon-pdf" href="#">Link message</a>
-                                    <a class="link-icon icon-before icon-pdf" href="#">Link message</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="row bottom-section-spacer-sm">
-                    <div class="col-md-6 col-md-offset-3 text-center bottom-section-spacer-sm">
-                        <h2 class="component-title">Types of Alerts</h2>
-                        <div>
-                            <span class="badge badge-primary">Introduction text needed</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
-                            explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
-                            suscipit sint eius, alias officiis.</p>
-                    </div>
-                </div>
-
-                <div class="row bottom-section-spacer-sm">
-                    <div class="col-md-6">
-                        <p>Default alert (no addition needed).</p>
-                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                            title="Click to copy HTML">
-                            <div class="halton-alert bottom-section-spacer-sm">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <p>Add <code>theme-success</code> to <code> class="halton-alert ..."</code> to acheive this
-                            effect.
+                        </h2>
+                        <h3>Default Alerts</h3>
+                        <p>Alerts can be reconfigurated in many things, they can have headings, paragraphs, leading icons, and footer links  (which themseves can be reconfigurated in different ways).</p>
                         </p>
-                        <div class="bx-container elementToCopy bottom-section-spacer-sm" data-toggle="tooltip"
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-alert bottom-section-spacer-sm">
+                                <p><b>With paragraph only</b> ...</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div
+                                class="halton-alert alert-icon icon-before icon-info icon-big bottom-section-spacer-sm">
+                                <p><b>With paragraph and leading icon</b> ...</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row bottom-section-spacer-lg">
+                    <div class="col-md-6">
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-alert bottom-section-spacer-sm">
+                                <h2 class="alert-title component-title">With headings</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-alert bottom-section-spacer-sm">
+                                <p><b>With footer links</b> ...</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi!</p>
+
+                                <div class="alert-footer">
+                                    <a class="link-icon icon-before icon-pdf" href="#">Footer Link 1</a>
+                                    <a class="link-icon icon-before icon-pdf" href="#">Footer Link 2</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="row" style="position: relative;">
+                    <span id="section-alerttypes" style="position: absolute; top: -60px;"></span>
+                    <div class="col-md-7 bottom-section-spacer-sm">
+                        <h3>Types of Alerts</h3>
+                        <p>We use theming to produce alerts of various types. By using a class with the prefix <code>theme-</code>, we create variety.</p>
+                    </div>
+                </div>
+
+ 
+
+                <div class="row bottom-section-spacer-sm">
+                    <div class="col-md-6">
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-alert bottom-section-spacer-sm">
+                                <p><b>Default alert (no addition needed).</b></p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bx-container elementToCopy" data-toggle="tooltip"
                             data-placement="top" title="Click to copy HTML">
                             <div class="halton-alert theme-success bottom-section-spacer-sm">
+                                <p><b>Add <code>theme-success</code> to <code> class="halton-alert ..."</code> to acheive this
+                                    effect.</b>
+                                </p>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                                    dignissimos quisquam perspiciatis nisi!</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-6">
-                        <p>Add <code>theme-info</code> to <code> class="halton-alert ..."</code> to acheive this
-                            effect.
-                        </p>
                         <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
                             <div class="halton-alert theme-info bottom-section-spacer-sm">
+                                <p><b>Add <code>theme-info</code> to <code> class="halton-alert ..."</code> to acheive this
+                                    effect.</b>
+                                </p>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                                    dignissimos quisquam perspiciatis nisi!</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <p>Add <code>theme-warning</code> to <code> class="halton-alert ..."</code> to acheive this
-                            effect.
-                        </p>
                         <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
                             <div class="halton-alert theme-warning bottom-section-spacer-sm">
+                                <p><b>Add <code>theme-warning</code> to <code> class="halton-alert ..."</code> to acheive this
+                                    effect.</b>
+                                </p>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                                    dignissimos quisquam perspiciatis nisi!</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-6">
-                        <p>Add <code>theme-infrastructure</code> to <code> class="halton-alert ..."</code> to
-                            acheive this effect.
-                        </p>
                         <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
                             <div class="halton-alert theme-infrastructure bottom-section-spacer-sm">
+                                <p><b>Add <code>theme-infrastructure</code> to <code> class="halton-alert ..."</code> to
+                                    acheive this effect.</b>
+                                </p>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                                    dignissimos quisquam perspiciatis nisi!</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <p>Add <code>theme-excellence</code> to <code> class="halton-alert ..."</code> to acheive
-                            this effect.
-                        </p>
                         <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
                             <div class="halton-alert theme-excellence bottom-section-spacer-sm">
+                                <p><b>Add <code>theme-excellence</code> to <code> class="halton-alert ..."</code> to acheive
+                                    this effect.</b>
+                                </p>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                                    dignissimos quisquam perspiciatis nisi!</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <p>Add <code>theme-emergency</code> to <code> class="halton-alert ..."</code> to acheive
-                            this effect.
-                        </p>
                         <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
                             <div class="halton-alert theme-emergency bottom-section-spacer-sm">
+                                <p><b>Add <code>theme-emergency</code> to <code> class="halton-alert ..."</code> to acheive
+                                    this effect.</b>
+                                </p>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                                    dignissimos quisquam perspiciatis nisi!</p>
                             </div>
                         </div>
                     </div>
@@ -873,47 +764,37 @@
         </div>
 
 
-
-
-        
-
-
-        <div id="section-cards" class="demoBoxes">   
+        <div id="section-cards" class="demoBoxes">
             <div class="container">
-                <div class="row bottom-section-spacer-md">
-                    <div class="col-md-6 col-md-offset-3 text-center">
-                        <h1 class="component-title">Cards</h1>
-                        <div>
-                            <span class="badge badge-primary">Introduction text needed</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
-                            explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
-                            suscipit sint eius, alias officiis.</p>
+                <div class="row bottom-section-spacer-sm">
+                    <div class="col-md-7">
+                        <h2 class="ds-head-h2">
+                            Cards
+                        </h2>
+                        <p>Cards are very similar to alerts. They can aslo be reconfigurated, and are used to nicey present a group of information.</p> 
                     </div>
                 </div>
 
-                <div class="row rbeh bottom-section-spacer-md">
+                <div class="row rbeh bottom-section-spacer-lg">
                     <div class="col-md-6">
-                        <p>Default card (no addition needed).</p>
                         <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
                             <div class="halton-card card">
                                 <div class="card-body">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
+                                    <p><b>Default card (no addition needed).</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
                                         obcaecati
-                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
+                                        aliquam assumenda animi reiciendis voluptate debitis!</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-6">
-                        <p>Card with title.</p>
                         <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
                             <div class="halton-card card">
                                 <div class="card-body">
-                                    <h3 class="card-title component-title">Title</h3>
+                                    <h3 class="card-title component-title">Card with title.</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos.</p>
                                 </div>
                             </div>
@@ -921,13 +802,11 @@
                     </div>
 
                     <div class="col-md-6">
-                        <p>Card with icon.</p>
                         <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
                             <div class="halton-card card card-icon icon-before icon-info icon-big">
                                 <div class="card-body">
-                                    <h3 class="card-title component-title">Title</h3>
-
+                                    <h3 class="card-title component-title">Card title and icon</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
                                         obcaecati
                                         aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
@@ -937,34 +816,15 @@
                     </div>
 
                     <div class="col-md-6">
-                        <p>Card with reduced padding: Add the class <code>halton-card--small</code> to
-                            <code> class="halton-card ..."</code> to acheive this effect.
-                        </p>
                         <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
                             <div class="halton-card halton-card--small card">
                                 <div class="card-body">
-                                    <h3 class="card-title component-title">Title</h3>
+                                    <h3 class="card-title component-title">With reduced padding</h3>
 
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
-                                        obcaecati
-                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <p>Card icon with reduced padding: Add the class <code>halton-card--small</code> to
-                            <code> class="halton-card ..."</code> to acheive this effect.
-                        </p>
-                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                            title="Click to copy HTML">
-                            <div
-                                class="halton-card halton-card--small card card-icon icon-before icon-info icon-big">
-                                <div class="card-body">
-                                    <h3 class="card-title component-title">Title</h3>
-
+                                    <p><b>Card with reduced padding: Add the class <code>halton-card--small</code> to
+                                        <code> class="halton-card ..."</code> to acheive this effect.</b>
+                                    </p>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
                                         obcaecati
                                         aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
@@ -974,143 +834,126 @@
                     </div>
                 </div>
 
-
-                <div class="row text-center bottom-section-spacer-sm">
-                    <h2>Colored Cards</h2>
+                <div class="row" style="position: relative;">
+                    <div class="col-md-7 bottom-section-spacer-sm">
+                        <span id="section-cardtypes" style="position: absolute; top: -60px;"></span>
+                        <h3 class="ds-head-h2">
+                            Types of cards
+                        </h3>
+                        <p>We use theming to produce cards of various types. By using a class with the prefix <code>theme-</code>, we create variety.</p> 
+                    </div>
                 </div>
+                
                 <div class="row rbeh">
                     <div class="col-md-6">
-                        <p>Card with reduced padding: Add the class <code>theme-info</code> to
-                            <code> class="halton-card card ..."</code> to acheive this effect.
-                        </p>
                         <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
                             <div class="halton-card card theme-info card-icon icon-before icon-info icon-big">
                                 <div class="card-body">
                                     <h3 class="card-title component-title">Title</h3>
-
+                                    <p>Add the class <code>theme-info</code> to
+                                        <code> class="halton-card card ..."</code> to acheive this effect.
+                                    </p>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
-                                        obcaecati
-                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
+                                        obcaecati aliquam assumenda animi reiciendis.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <p>Card with reduced padding: Add the class <code>theme-success</code> to
-                            <code> class="halton-card card ..."</code> to acheive this effect.
-                        </p>
                         <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
                             <div class="halton-card card theme-success card-icon icon-before icon-info icon-big">
                                 <div class="card-body">
                                     <h3 class="card-title component-title">Title</h3>
 
+                                    <p>Add the class <code>theme-success</code> to
+                                        <code> class="halton-card card ..."</code> to acheive this effect.
+                                    </p>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
-                                        obcaecati
-                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
+                                        obcaecati aliquam assumenda animi reiciendis.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <p>Card with reduced padding: Add the class <code>theme-warning</code> to
-                            <code> class="halton-card card ..."</code> to acheive this effect.
-                        </p>
                         <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
                             <div class="halton-card card theme-warning card-icon icon-before icon-info icon-big">
                                 <div class="card-body">
                                     <h3 class="card-title component-title">Title</h3>
 
+                                    <p>Add the class <code>theme-warning</code> to
+                                        <code> class="halton-card card ..."</code> to acheive this effect.
+                                    </p>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
-                                        obcaecati
-                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
+                                        obcaecati aliquam assumenda animi reiciendis.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <p>Card with reduced padding: Add the class <code>theme-infrastructure</code> to
-                            <code> class="halton-card card ..."</code> to acheive this effect.
-                        </p>
                         <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
-                            <div
-                                class="halton-card card theme-infrastructure card-icon icon-before icon-info icon-big">
+                            <div class="halton-card card theme-infrastructure card-icon icon-before icon-info icon-big">
                                 <div class="card-body">
                                     <h3 class="card-title component-title">Title</h3>
-
+                                    <p>Add the class <code>theme-infrastructure</code> to
+                                        <code> class="halton-card card ..."</code> to acheive this effect.
+                                    </p>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
-                                        obcaecati
-                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
+                                        obcaecati aliquam assumenda animi reiciendis.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <p>Card with reduced padding: Add the class <code>theme-excellence</code> to
-                            <code> class="halton-card card ..."</code> to acheive this effect.
-                        </p>
                         <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
                             <div class="halton-card card theme-excellence card-icon icon-before icon-info icon-big">
                                 <div class="card-body">
                                     <h3 class="card-title component-title">Title</h3>
 
+                                    <p>Add the class <code>theme-excellence</code> to
+                                        <code> class="halton-card card ..."</code> to acheive this effect.
+                                    </p>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
-                                        obcaecati
-                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
+                                        obcaecati aliquam assumenda animi reiciendis.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <p>Card with reduced padding: Add the class <code>theme-emergency</code> to
-                            <code> class="halton-card card ..."</code> to acheive this effect.
-                        </p>
                         <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
                             title="Click to copy HTML">
                             <div class="halton-card card theme-emergency card-icon icon-before icon-info icon-big">
                                 <div class="card-body">
                                     <h3 class="card-title component-title">Title</h3>
 
+                                    <p>Add the class <code>theme-emergency</code> to
+                                        <code> class="halton-card card ..."</code> to acheive this effect.
+                                    </p>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
-                                        obcaecati
-                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
+                                        obcaecati aliquam assumenda animi reiciendis.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
 
 
-
-
-
-
-
-        <div id="section-digitservcall" class="demoBoxes">   
+        <div id="section-digitservcall" class="demoBoxes">
             <div class="container">
-                <div class="row bottom-section-spacer-md">
-                    <div class="col-md-6 col-md-offset-3 text-center">
-                        <h1 class="component-title">Digital Service Callout</h1>
-                        <div>
-                            <span class="badge badge-primary">Introduction text needed</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
-                            explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
-                            suscipit sint eius, alias officiis.</p>
+                <div class="row bottom-section-spacer-sm">
+                    <div class="col-md-7">
+                        <h2 class="ds-head-h2">
+                            Digital Service Callout
+                        </h2>
+                        <p>This component is used for the grand advertisement of a sertvice. This is a fully responsive and customizable component, ready to be used.</p> 
                     </div>
                 </div>
-
-
-
-
 
                 <div class="row">
                     <div class="col-md-12">
@@ -1128,8 +971,7 @@
                                                 message <span class="sr-only">(PDF link)</span> consectetur
                                                 adipiscing elit</a>. Ut et massa mi.
                                             Aliquam in hendrerit urna ellentesque sit amet sapien.</p>
-                                        <a href="#"
-                                            class="btn halton-btn text-icon icon-after icon-arrow-right">Check
+                                        <a href="#" class="btn halton-btn text-icon icon-after icon-arrow-right">Check
                                             it out now</a>
                                     </article>
 
@@ -1145,10 +987,6 @@
             </div>
         </div>
 
-
-
-
- 
 
         <div id="section-tabs" class="demoBoxes">
             <div class="container">
@@ -1352,7 +1190,7 @@
 
 
 
-            </div> 
+            </div>
         </div>
 
 
@@ -1361,7 +1199,7 @@
 
 
 
-        <div id="section-modal" class="demoBoxes"> 
+        <div id="section-modal" class="demoBoxes">
             <div class="container">
                 <div class="row bottom-section-spacer-md">
                     <div class="col-md-6 col-md-offset-3 text-center">
@@ -1415,8 +1253,8 @@
                                         </ul>
                                     </div>
                                     <div class="modal-footer">
-                                        <a target="_blank" class="link-icon icon-before icon-external"
-                                            href="#">Suscipit placeat autem nisi ex esse enim aspernatur unde.</a>
+                                        <a target="_blank" class="link-icon icon-before icon-external" href="#">Suscipit
+                                            placeat autem nisi ex esse enim aspernatur unde.</a>
                                     </div>
                                 </div>
                             </div>
@@ -1460,7 +1298,7 @@
                         </code>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
 
 
@@ -1470,7 +1308,7 @@
 
 
 
-        <div id="section-accordion" class="demoBoxes">        
+        <div id="section-accordion" class="demoBoxes">
             <div class="container">
                 <div class="row bottom-section-spacer-md">
                     <div class="col-md-6 col-md-offset-3 text-center">
@@ -1495,8 +1333,7 @@
                                     <div class="panel-heading" role="tab" id="headingOne">
                                         <h4 class="panel-title">
                                             <a role="button" data-toggle="collapse" data-parent="#halton-accordion"
-                                                href="#collapseOne" aria-expanded="true"
-                                                aria-controls="collapseOne">
+                                                href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                                 Lorem ipsum dolor sit amet
                                             </a>
                                         </h4>
@@ -1548,7 +1385,7 @@
 
 
 
-        <div id="section-accordion" class="demoBoxes">                 
+        <div id="section-timeline" class="demoBoxes">
             <div class="container">
                 <div class="row bottom-section-spacer-md">
                     <div class="col-md-6 col-md-offset-3 text-center">
@@ -1621,9 +1458,9 @@
 
 
 
- 
 
-        <div id="section-sidebar" class="demoBoxes"> 
+
+        <div id="section-sidebar" class="demoBoxes">
             <div class="container">
                 <div class="row bottom-section-spacer-md">
                     <div class="col-md-6 col-md-offset-3 text-center">
@@ -1740,7 +1577,7 @@
                         </div>
                     </section>
                 </div>
-            </div> 
+            </div>
         </div>
 
 
@@ -1781,7 +1618,9 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
