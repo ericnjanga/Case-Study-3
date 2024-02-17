@@ -68,8 +68,8 @@
 
 @layer headings {
     h1, .h1 {
-        font-size: var(--site-h1-font-size)!important;
-        line-height: var(--site-h1-line-height)!important;
+        font-size: var(--site-h1-font-size);
+        line-height: var(--site-h1-line-height);
 
         @media (min-width: 1200px) {
             --site-h1-font-size: 40px;
@@ -82,8 +82,8 @@
     }
 
     h2, .h2 {
-        font-size: var(--site-h2-font-size)!important;
-        line-height: var(--site-h2-line-height)!important;
+        font-size: var(--site-h2-font-size);
+        line-height: var(--site-h2-line-height);
 
         @media (min-width: 1400px) {
             --site-h2-font-size: 32px;

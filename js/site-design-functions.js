@@ -1,14 +1,28 @@
 'use strict';
 
 
-function copyMarkup() { 
-    const elements = document.querySelectorAll('.elementToCopy');
+/**
+ * Copy the markup of a DOM element (targetElementClass), remove any undesired CSS class from that markup
+ * @param {*} arrCssStringsToRemove
+ */
+
+function copyMarkup(targetElementClass, arrCssStringsToRemove) {
+    const elements = document.querySelectorAll(targetElementClass);
 
     elements.forEach(element => {
         element.addEventListener('click', function () {
+            // Copy the HTML content of the element
+            let copiedHTML = element.innerHTML;
+
+            // Remove CSS strings from the copied HTML if found within class attributes
+            arrCssStringsToRemove.forEach(cssString => {
+                const regex = new RegExp(`\\b${cssString}\\b`, 'g');
+                copiedHTML = copiedHTML.replace(regex, '');
+            });
+
             // Create a temporary textarea element
             const textarea = document.createElement('textarea');
-            textarea.value = element.innerHTML;
+            textarea.value = copiedHTML;
 
             // Append the textarea to the body
             document.body.appendChild(textarea);
@@ -22,7 +36,7 @@ function copyMarkup() {
 
             // Alert or console log a message to indicate successful copying
             alert('HTML copied to clipboard!');
-            // console.log('HTML copied to clipboard:', element.outerHTML);
+            // console.log('HTML copied to clipboard:', copiedHTML);
         });
     });
 }
@@ -30,37 +44,10 @@ function copyMarkup() {
 
 
 
-// function copyMarkup() { 
-//     const abcdElement = document.querySelector('.elementToCopy');
-    
-//     abcdElement.addEventListener('click', function (event) {
-//       const childMarkup = event.target.innerHTML;
-      
-//       navigator.clipboard.writeText(childMarkup)
-//         .then(() => {
-//           console.log('Child markup copied to clipboard:', childMarkup);
-//           alert('Child markup copied to clipboard!');
-//         })
-//         .catch(err => {
-//           console.error('Unable to copy:', err);
-//           alert('Failed to copy child markup to clipboard.');
-//         });
-//     });
-//   }
 
-
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', copyMarkup);
-
-// Trigger the function when a button is clicked (or any other event)
-// const copyButton = document.getElementById('copyButton'); // Assuming you have a button with id="copyButton"
-// copyButton.addEventListener('click', copyMarkup);
-
-
-
-// console.log('>>>copyHTMLToClipboard()>>>>');
+// 
+document.addEventListener('DOMContentLoaded', function() { 
+    const cssTarget = '.elementToCopy';
+    const classesToRemove = ['in-view'];
+    copyMarkup(cssTarget, classesToRemove);
+});

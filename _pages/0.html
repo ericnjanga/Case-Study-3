@@ -9,31 +9,230 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link href="/dist/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles/bootstrapFramework/bootstrap-3.3.6.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.3.8/dist/photoswipe.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    <!-- 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@5.3.8/dist/photoswipe.min.css"> -->
+
+    <style>
+        /* Define smooth scrolling behavior */
+        html {
+          scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 
 
 <body>
+
+
+    <nav class="ds-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#intro">
+                <img src="/img/Custom 1.jpg" alt=""> <span>Design System</span>
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-buttons">Buttons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-links">Links</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-spacing">Spacing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-icons">Icons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-equheight">Equal Height Sections</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Components <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#section-alerts">Alerts</a></li>
+                          <li><a class="dropdown-item" href="#section-cards">Cards</a></li>
+                          <li><a class="dropdown-item" href="#section-digitservcall">Digital Service Callout</a></li>
+                          <li><a class="dropdown-item" href="#section-tabs">Tabs</a></li>
+                          <li><a class="dropdown-item" href="#section-mediarow">Media row</a></li>
+                          <li><a class="dropdown-item" href="#section-modal">Modal</a></li>
+                          <li><a class="dropdown-item" href="#section-accordion">Accordion</a></li>
+                          <li><a class="dropdown-item" href="#section-timeline">Timeline</a></li>
+                          <li><a class="dropdown-item" href="#section-sidebar">Sidebar</a></li>
+                          <!-- <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    
+    
+
+
+    
+
+
+
+
+
+
     <div class="halton-features-wrapper container-fluid">
 
-        <style>
-            .demo-icon {
-                margin: 0 auto 40px auto;
-                width: 30px;
-            }
-        </style>
+    
 
-        <div class="bottom-section-spacer"></div>
+        <header id="intro" class="ds-head">
+            <div class="container">
+                <h1 class="ds-head-h1">Design system</h1>
+                <div class="">
+                    <div class="">
+                        <p>Halton's Design System is created to provide a stable and detailed documentation, to symplify the usage of custom components, and to facilitate their implementation by any content creator.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
 
 
-        <div class="bottom-section-spacer text-center">
-            <h1>Design system</h1>
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus soluta, repudiandae culpa
-                        dolore assumenda minus. A, dolorem magni! Exercitationem fugiat pariatur aut! Enim aperiam
-                        officiis aut, deleniti a voluptates et?</p>
+
+
+
+
+
+        <div id="section-buttons" class="demoBoxes">
+            <div class="container">
+
+                <div class="row bottom-section-spacer-sm">
+                    <div class="col-md-6 bottom-section-spacer-sm">
+                        <h2 class="ds-head-h2">
+                            Buttons
+                        </h2>
+                        <p>Custom buttons created for the Halton brand. Icons can be changed at will by using any
+                            icon <a href="#section-icons">classes listed below</a>. Icon can be moved left and right by using the class <code>icon-before</code> or <code>icon-after</code>. The primary button is acheived by adding the class <code>halton-btn-primary</code></p>
+                       
+                    </div>
+                </div>
+
+
+
+
+                <div class="row bottom-section-spacer-sm">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                      <!-- Brand and toggle get grouped for better mobile display -->
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Brand</a>
+                      </div>
+                  
+                      <!-- Collect the nav links, forms, and other content for toggling -->
+                      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                          <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                          <li><a href="#">Link</a></li>
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">Separated link</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">One more separated link</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <form class="navbar-form navbar-left">
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                          </div>
+                          <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                          <li><a href="#">Link</a></li>
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">Separated link</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                  </nav>
+                </div>
+
+
+
+
+
+
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="component-title">Default</h3>
+                        <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <a href="#" class="btn halton-btn">button messsage</a>
+                        </div>
+
+                        <br>
+                        <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <a href="#" class="btn halton-btn text-icon icon-before icon-arrow-right">button
+                                messsage</a>
+                        </div>
+
+                        <br>
+                        <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <a href="#" class="btn halton-btn text-icon icon-after icon-arrow-right">button
+                                messsage</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3 class="component-title">Primary Buttons</h3>
+                        <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <a href="#" class="btn halton-btn halton-btn-primary">button messsage</a>
+                        </div>
+
+                        <br>
+
+                        <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <a href="#"
+                                class="btn halton-btn halton-btn-primary text-icon icon-before icon-arrow-right">button
+                                messsage</a>
+                        </div>
+
+                        <br>
+
+                        <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <a href="#"
+                                class="btn halton-btn halton-btn-primary text-icon icon-after icon-arrow-right">button
+                                messsage</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -44,73 +243,164 @@
 
 
 
-        <div class="row bottom-section-spacer-md">
-            <div class="col-md-12">
-                <div class="demoBoxes">
 
-                    <div class="row bottom-section-spacer-sm">
-                        <div class="col-md-6 col-md-offset-3 text-center bottom-section-spacer-sm">
-                            <h1 class="component-title text-center">
-                                Buttons
-                            </h1>
-                            <p>Custom buttons created for the Halton brand. Icons can be changed at will by using any icon <a href="#halton-icons">classes listed below</a>.</p>
-                        </div>
+        <div id="section-links" class="demoBoxes">
+            <div class="container">
+
+                <div class="row bottom-section-spacer-sm">
+                    <div class="col-md-6 bottom-section-spacer-sm">
+                        <h2 class="ds-head-h2">
+                            Links
+                        </h2>
+                        <p>Links are easily customizable as they can be combined with <a href="#">icons</a>, with their appearance easily adjusted (underline, bold, ...).</p>
+
+                        <p>Let's suppose your link connects to a PDF, adding the following code will help screen
+                            readers understand the link's context.
+                            <code>&lt;span class="sr-only"&gt;(PDF link)&lt;/span&gt;</code>
+                        </p>
+                       
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3 class="component-title">Types</h3>
+
+                        <span class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <a href="#">Link message</a>
+                        </span>
+
+                        <br>
+                        <br>
+
+                        <span class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <a href="#" class="link-underlined">Link message</a>
+                        </span>
+
+                        <br>
+                        <br>
+                        <span class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <a class="is-bold" href="#">Link message</a>
+                        </span>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-3 col-lg-offset-3">
-                            <h3 class="component-title">Default</h3>
-                            <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <a href="#" class="btn halton-btn">button messsage</a>
-                            </div>
+                    <div class="col-md-3">
+                        <h3 class="component-title">With icons</h3>
 
-                            <br>
-                            <p>Icon can be moved left by using the class <code>icon-before</code></p>
-                            <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <a href="#"
-                                    class="btn halton-btn text-icon icon-before icon-arrow-right">button
-                                    messsage</a>
-                            </div>
+                        <span class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <a class="link-icon icon-before icon-pdf" href="#">Link message <span
+                                    class="sr-only">(PDF link)</span></a>
+                        </span>
 
-                            <br>
-                            <p>Icon can be moved right by using the class <code>icon-after</code></p>
-                            <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <a href="#"
-                                    class="btn halton-btn text-icon icon-after icon-arrow-right">button
-                                    messsage</a>
-                            </div>
+                        <br>
+                        <br>
+
+                        <span class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <a class="link-icon icon-after icon-pdf" href="#">Link message <span
+                                    class="sr-only">(PDF link)</span></a>
+                        </span>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3 class="component-title">Combined styles</h3>
+                        <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <p><a class="link-icon icon-before link-underlined icon-mail" href="#">Lorem ipsum dolor sit <span
+                                        class="sr-only">(PDF link)</span></a> amet
+                                consectetur. Corporis fugit error nihil vel? Rem magni <a
+                                    class="link-icon icon-before icon-summary is-bold" href="#">ea accusamus cum
+                                    pariatur</a> eum veniam! Lorem ipsum dolor adipisicing elit. <a
+                                    class="link-icon icon-after icon-graph-up-arrow" href="#">Corporis fugit</a>
+                                error
+                                eum veniam
+                                consectetur eos ad, mollitia sequi, <a class="link-icon icon-after icon-person"
+                                    href="#">dignissimos voluptatum</a>!</p>
                         </div>
 
-                        <div class="col-md-3">
-                            <h3 class="component-title">Primary Buttons</h3>
-                            <p>The primary button is acheived by adding the class <code>halton-btn-primary</code></p>
-                            <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <a href="#" class="btn halton-btn halton-btn-primary">button messsage</a>
-                            </div>
+                        <!-- <br>
+                        <br>
 
-                            <br>
+                        <span class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <a class="link-icon is-bold icon-before icon-pdf" href="#">Link message <span
+                                    class="sr-only">(PDF link)</span></a>
+                        </span>
 
-                            <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <a href="#"
-                                    class="btn halton-btn halton-btn-primary text-icon icon-before icon-arrow-right">button
-                                    messsage</a>
-                            </div>
+                        <br>
+                        <br>
 
-                            <br>
+                        <span class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <a class="link-icon is-bold icon-after icon-pdf" href="#">Link message <span
+                                    class="sr-only">(PDF link)</span></a>
+                        </span> -->
+                    </div>
 
-                            <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <a href="#"
-                                    class="btn halton-btn halton-btn-primary text-icon icon-after icon-arrow-right">button
-                                    messsage</a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+        </div>
+        
 
+
+
+        <div id="section-spacing" class="demoBoxes">
+
+            <style>
+                p.demo-p {
+                    border: 1px solid #37a14e;
+                }
+            </style>
+
+            <div class="container">
+                <div class="row bottom-section-spacer-sm">
+                    <div class="col-md-6 bottom-section-spacer-sm">
+                        <h2 class="ds-head-h2">
+                            Spacing
+                        </h2>
+                        <p>Spacing classes help create a standard for spacing between HTML elements. This brings visual order and contributes to a pleasing User Experience. There is three types of spacing:</p>
+                        <p>Small <code>bottom-section-spacer-sm</code>, Medium <code>bottom-section-spacer-md</code>, Large <code>bottom-section-spacer-lg</code>.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <h3 class="component-title">No spacing</h3>
+                        <p class="demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit dignissimos
+                            quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                        <p class="demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit dignissimos
+                            quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h3 class="component-title">Small spacing</h3>
+                        <p class="bottom-section-spacer-sm demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum fugit dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!
+                        </p>
+                        <p class="demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit dignissimos
+                            quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h3 class="component-title">Medium spacing</h3>
+                        <p class="bottom-section-spacer-md demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum fugit dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!
+                        </p>
+                        <p class="demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit dignissimos
+                            quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <h3 class="component-title">Large spacing</h3>
+                        <p class="bottom-section-spacer-lg demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptatum fugit dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!
+                        </p>
+                        <p class="demo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit dignissimos
+                            quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
                     </div>
                 </div>
             </div>
@@ -121,299 +411,176 @@
 
 
 
+        <div id="section-icons" class="demoBoxes">
 
+            <style>
+                .demo-table>thead>tr>th,
+                .demo-table>tbody>tr>td,
+                .demo-table>tbody>tr>th {
+                    border-bottom: 2px solid #b9b9b9;
+                }
 
-        <div class="row bottom-section-spacer-md">
-            <div class="col-md-12">
-                <div class="demoBoxes">
+                .demo-table .halton-card.card {
+                    background-color: transparent;
+                }
+                .demo-table .badge {
+                    color: black;
+                    font-size: small;
+                    background-color: transparent;
+                }
+            </style>
 
+            <div class="container">
 
-                    <div class="row bottom-section-spacer-md">
-                        <div class="col-md-6 col-lg-offset-3 text-center">
-                            <p>Let's suppose your link connects to a PDF, adding the following code will help screen readers understand the link's context. <code>&lt;span class="sr-only"&gt;(PDF link)&lt;/span&gt;</code> </p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-3">
-                            <h3 class="component-title">Links</h3>
-
-                            <span class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <a href="#">Link message</a>
-                            </span>
-
-                            <br>
-                            <br>
-
-                            <span class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <a class="link-icon icon-before icon-pdf" href="#">Link message <span class="sr-only">(PDF link)</span></a>
-                            </span>
-
-                            <br>
-                            <br>
-
-                            <span class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <a class="link-icon icon-after icon-pdf" href="#">Link message <span class="sr-only">(PDF link)</span></a>
-                            </span>
-                        </div>
-
-                        <div class="col-md-3">
-                            <h3 class="component-title">Links (underlined)</h3>
-
-                            <span class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <a href="#" class="link-underlined">Link message</a>
-                            </span>
-
-                            <br>
-                            <br>
-
-                            <span class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <a class="link-underlined link-icon icon-before icon-pdf" href="#">Link message <span class="sr-only">(PDF link)</span></a>
-                            </span>
-
-                            <br>
-                            <br>
-
-                            <span class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <a class="link-underlined link-icon icon-after icon-pdf" href="#">Link message <span class="sr-only">(PDF link)</span></a>
-                            </span>
-                        </div>
-
-                        <div class="col-md-3">
-                            <h3 class="component-title">Links (bold)</h3>
-                            <span class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <a class="is-bold" href="#">Link message</a>
-                            </span>
-
-                            <br>
-                            <br>
-
-                            <span class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <a class="link-icon is-bold icon-before icon-pdf" href="#">Link message <span class="sr-only">(PDF link)</span></a>
-                            </span>
-
-                            <br>
-                            <br>
-
-                            <span class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <a class="link-icon is-bold icon-after icon-pdf" href="#">Link message <span class="sr-only">(PDF link)</span></a>
-                            </span>
-                        </div>
-
-                        <div class="col-md-3">
-                            <h3 class="component-title">Links in a paragraph</h3>
-                            <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <p><a class="link-icon icon-before icon-mail" href="#">Lorem ipsum dolor sit <span class="sr-only">(PDF link)</span></a> amet
-                                    consectetur. Corporis fugit error nihil vel? Rem magni <a
-                                        class="link-icon icon-before icon-summary is-bold" href="#">ea accusamus cum
-                                        pariatur</a> eum veniam! Lorem ipsum dolor adipisicing elit. <a
-                                        class="link-icon icon-after icon-graph-up-arrow" href="#">Corporis fugit</a>
-                                    error
-                                    eum veniam
-                                    consectetur eos ad, mollitia sequi, <a class="link-icon icon-after icon-person"
-                                        href="#">dignissimos voluptatum</a>!</p>
-                            </div>
-                        </div>
+                <div class="row bottom-section-spacer-sm">
+                    <div class="col-md-6 bottom-section-spacer-sm">
+                        <h2 class="ds-head-h2">
+                            Icons
+                        </h2>
+                        <p>Here is the list of icons that are available for use anywhere in the code. Just add the
+                            class highlighted in gray anywhere you wish.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="row bottom-section-spacer-md">
-            <div class="col-md-12">
-                <div class="demoBoxes">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3 text-center bottom-section-spacer-md">
-                            <h1 class="component-title text-center">
-                                Spacing
-                            </h1>
-                            <div>
-                                <span class="badge badge-danger">Responsiveness not yet completed</span>
-                            </div>
-                            <p>This helps standardizing the spacing between two HTML elements.</p>
-                        </div>
-                    </div>
-
-
-                    <div class="row">
-                        <div class="col-md-3">
-                            <p>No class needed</p>.
-                            <h3 class="component-title">No spacing</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit dignissimos
-                                quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit dignissimos
-                                quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
-                        </div>
-
-                        <div class="col-md-3">
-                            <p>Add the class <code>bottom-section-spacer-sm</code>.</p>
-                            <h3 class="component-title">Small spacing</h3>
-                            <p class="bottom-section-spacer-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatum fugit dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!
-                            </p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit dignissimos
-                                quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
-                        </div>
-
-                        <div class="col-md-3">
-                            <p>Add the class <code>bottom-section-spacer-md</code>.</p>
-                            <h3 class="component-title">Medium spacing</h3>
-                            <p class="bottom-section-spacer-md">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatum fugit dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!
-                            </p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit dignissimos
-                                quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
-                        </div>
-
-                        <div class="col-md-3">
-                            <p>Add the class <code>bottom-section-spacer-lg</code>.</p>
-                            <h3 class="component-title">Large spacing</h3>
-                            <p class="bottom-section-spacer-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatum fugit dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!
-                            </p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit dignissimos
-                                quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
 
 
 
-
-        <div id="halton-icons" class="row bottom-section-spacer-md">
-            <div class="col-md-12">
-                <div class="demoBoxes">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3 text-center bottom-section-spacer-md">
-                            <h1 class="component-title text-center">
-                                Icons
-                            </h1>
-                            <p>Here is the list of icons that are available for use anywhere in the code. Just add the class highlighted in gray anywhere you wish.</p>
-                        </div>
-                    </div>
-
-                    <div class="row rbeh">
-                        <div class="col-md-2">
+                <table class="table demo-table">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>
                             <div class="halton-card card text-center">
                                 <div class="demo-icon link-icon icon-big icon-before icon-arrow-right"></div>
                                 <span class="badge badge-secondary">icon-arrow-right</span>
                             </div>
-                        </div>
-                        <div class="col-md-2">
+                        </th>
+                        <td>
                             <div class="halton-card card text-center">
                                 <div class="demo-icon link-icon icon-big icon-before icon-pin"></div>
                                 <span class="badge badge-secondary">icon-pin</span>
                             </div>
-                        </div>
-                        <div class="col-md-2">
+                        </td>
+                        <td>
                             <div class="halton-card card text-center">
                                 <div class="demo-icon link-icon icon-big icon-before icon-pdf"></div>
                                 <span class="badge badge-secondary">icon-pdf</span>
                             </div>
-                        </div>
-                        <div class="col-md-2">
+                        </td>
+                        <td>
                             <div class="halton-card card text-center">
                                 <div class="demo-icon link-icon icon-big icon-before icon-old-phone"></div>
                                 <span class="badge badge-secondary">icon-old-phone</span>
                             </div>
-                        </div>
-                        <div class="col-md-2">
+                        </td>
+                        <td>
                             <div class="halton-card card text-center">
                                 <div class="demo-icon link-icon icon-big icon-before icon-external"></div>
                                 <span class="badge badge-secondary">icon-external</span>
                             </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-link"></div>
-                                <span class="badge badge-secondary">icon-link</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-video"></div>
-                                <span class="badge badge-secondary">icon-video</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-info"></div>
-                                <span class="badge badge-secondary">icon-info</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-summary"></div>
-                                <span class="badge badge-secondary">icon-summary</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-mail"></div>
-                                <span class="badge badge-secondary">icon-mail</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-person"></div>
-                                <span class="badge badge-secondary">icon-person</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-graph-up-arrow"></div>
-                                <span class="badge badge-secondary">icon-graph-up-arrow</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-thermometer-sun"></div>
-                                <span class="badge badge-secondary">icon-thermometer-sun</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-award-1"></div>
-                                <span class="badge badge-secondary">icon-award-1</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
-                            <div class="halton-card card text-center">
-                                <div class="demo-icon link-icon icon-big icon-before icon-cellphone"></div>
-                                <span class="badge badge-secondary">icon-cellphone</span>
-                            </div>
-                        </div>
-                        <div class="col-md-2">
+                        </td>
+                        <td>
                             <div class="halton-card card text-center">
                                 <div class="demo-icon link-icon icon-big icon-before icon-mapping"></div>
                                 <span class="badge badge-secondary">icon-mapping</span>
                             </div>
-                        </div>
-                        <div class="col-md-2">
+                        </td>
+                        <td>
+                            <div class="halton-card card text-center">
+                                <div class="demo-icon link-icon icon-big icon-before icon-mapping"></div>
+                                <span class="badge badge-secondary">icon-mapping</span>
+                            </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">
                             <div class="halton-card card text-center">
                                 <div class="demo-icon link-icon icon-big icon-before icon-warning"></div>
                                 <span class="badge badge-secondary">icon-warning</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </th>
+                        <td> 
+                            <div class="halton-card card text-center">
+                                <div class="demo-icon link-icon icon-big icon-before icon-link"></div>
+                                <span class="badge badge-secondary">icon-link</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="halton-card card text-center">
+                                <div class="demo-icon link-icon icon-big icon-before icon-video"></div>
+                                <span class="badge badge-secondary">icon-video</span>
+                            </div>
+                        </td>
+                        <td> 
+                            <div class="halton-card card text-center">
+                                <div class="demo-icon link-icon icon-big icon-before icon-info"></div>
+                                <span class="badge badge-secondary">icon-info</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="halton-card card text-center">
+                                <div class="demo-icon link-icon icon-big icon-before icon-summary"></div>
+                                <span class="badge badge-secondary">icon-summary</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="halton-card card text-center">
+                                <div class="demo-icon link-icon icon-big icon-before icon-mail"></div>
+                                <span class="badge badge-secondary">icon-mail</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="halton-card card text-center">
+                                <div class="demo-icon link-icon icon-big icon-before icon-cellphone"></div>
+                                <span class="badge badge-secondary">icon-cellphone</span>
+                            </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">
+                            <div class="halton-card card text-center">
+                                <div class="demo-icon link-icon icon-big icon-before icon-person"></div>
+                                <span class="badge badge-secondary">icon-person</span>
+                            </div>
+                        </th>
+                        <td>
+                            <div class="halton-card card text-center">
+                                <div class="demo-icon link-icon icon-big icon-before icon-graph-up-arrow"></div>
+                                <span class="badge badge-secondary">icon-graph-up-arrow</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="halton-card card text-center">
+                                <div class="demo-icon link-icon icon-big icon-before icon-thermometer-sun"></div>
+                                <span class="badge badge-secondary">icon-thermometer-sun</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="halton-card card text-center">
+                                <div class="demo-icon link-icon icon-big icon-before icon-award-1"></div>
+                                <span class="badge badge-secondary">icon-award-1</span>
+                            </div>
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                </table>
+ 
             </div>
         </div>
 
@@ -421,541 +588,502 @@
 
 
 
-
-        <div id="halton-alert" class="row bottom-section-spacer-md">
-            <div class="col-md-12">
-                <div class="demoBoxes">
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3 text-center bottom-section-spacer-md">
-                            <h1 class="component-title text-center">
-                                Alerts
-                            </h1>
-                            <h2 class="component-title">Default alerts</h2>
-                            <div>
-                                <span class="badge badge-primary">Introduction text needed</span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
-                                explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
-                                suscipit sint eius, alias officiis.</p>
-                        </div>
+        <div id="section-equheight" class="demoBoxes">  
+            <div class="container">
+                <div class="row bottom-section-spacer-md">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h1 class="component-title">Columns of equal height</h1>
+                        <p>Elements of the same row can have equal height. For this, you need to add the class
+                            <code>rbeh</code> to <code>class="row ..."</code>
+                            then you need to add the class <code>rbeh-item</code> to the element inside each column.
+                            See the illustration below.
+                        </p>
                     </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-alert bottom-section-spacer-sm">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                        dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-alert alert-icon icon-before icon-info icon-big bottom-section-spacer-sm">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                        dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-alert bottom-section-spacer-sm">
-                                    <h2 class="alert-title component-title">Alert Title</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                        dignissimos quisquam perspiciatis nisi!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-alert bottom-section-spacer-sm">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                        dignissimos quisquam perspiciatis nisi!</p>
-
-                                    <div class="alert-footer">
-                                        <a class="link-icon icon-before icon-pdf" href="#">Link message</a>
-                                        <a class="link-icon icon-before icon-pdf" href="#">Link message</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="row bottom-section-spacer-md">
-                        <div class="col-md-6">
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-alert bottom-section-spacer-sm">
-                                    <h2 class="component-title">Alert Title</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                        dignissimos quisquam perspiciatis nisi!</p>
-
-                                    <div class="alert-footer">
-                                        <a class="link-icon icon-before icon-pdf" href="#">Link message</a>
-                                        <a class="link-icon icon-before icon-pdf" href="#">Link message</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-alert alert-icon icon-before icon-info icon-big bottom-section-spacer-sm">
-                                    <h2 class="component-title">Alert Title</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                        dignissimos quisquam perspiciatis nisi!</p>
-
-                                    <div class="alert-footer">
-                                        <a class="link-icon icon-before icon-pdf" href="#">Link message</a>
-                                        <a class="link-icon icon-before icon-pdf" href="#">Link message</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="row bottom-section-spacer-sm">
-                        <div class="col-md-6 col-md-offset-3 text-center bottom-section-spacer-sm">
-                            <h2 class="component-title">Types of Alerts</h2>
-                            <div>
-                                <span class="badge badge-primary">Introduction text needed</span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
-                                explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
-                                suscipit sint eius, alias officiis.</p>
-                        </div>
-                    </div>
-
-                    <div class="row bottom-section-spacer-sm">
-                        <div class="col-md-6">
-                            <p>Default alert (no addition needed).</p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-alert bottom-section-spacer-sm">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                        dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Add <code>theme-success</code> to <code> class="halton-alert ..."</code> to acheive this effect.
-                            </p>
-                            <div class="bx-container elementToCopy bottom-section-spacer-sm" data-toggle="tooltip"
-                                data-placement="top" title="Click to copy HTML">
-                                <div class="halton-alert theme-success bottom-section-spacer-sm">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                        dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <p>Add <code>theme-info</code> to <code> class="halton-alert ..."</code> to acheive this effect.
-                            </p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-alert theme-info bottom-section-spacer-sm">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                        dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Add <code>theme-warning</code> to <code> class="halton-alert ..."</code> to acheive this effect.
-                            </p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-alert theme-warning bottom-section-spacer-sm">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                        dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <p>Add <code>theme-infrastructure</code> to <code> class="halton-alert ..."</code> to acheive this effect.
-                            </p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-alert theme-infrastructure bottom-section-spacer-sm">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                        dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Add <code>theme-excellence</code> to <code> class="halton-alert ..."</code> to acheive this effect.
-                            </p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-alert theme-excellence bottom-section-spacer-sm">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                        dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Add <code>theme-emergency</code> to <code> class="halton-alert ..."</code> to acheive this effect.
-                            </p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-alert theme-emergency bottom-section-spacer-sm">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
-                                        dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
-        </div>
 
 
 
-
-
-
-
-        <div class="row bottom-section-spacer-md">
-            <div class="col-md-12">
-                <div class="demoBoxes">
-                    <div class="row bottom-section-spacer-md">
-                        <div class="col-md-6 col-md-offset-3 text-center">
-                            <h1 class="component-title">Cards</h1>
-                            <div>
-                                <span class="badge badge-primary">Introduction text needed</span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
-                                explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
-                                suscipit sint eius, alias officiis.</p>
-                        </div>
-                    </div>
-
-                    <div class="row rbeh bottom-section-spacer-md">
-                        <div class="col-md-6">
-                            <p>Default card (no addition needed).</p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-card card">
-                                    <div class="card-body">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
-                                            obcaecati
-                                            aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <p>Card with title.</p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-card card">
-                                    <div class="card-body">
-                                        <h3 class="card-title component-title">Title</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <p>Card with icon.</p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-card card card-icon icon-before icon-info icon-big">
-                                    <div class="card-body">
-                                        <h3 class="card-title component-title">Title</h3>
-
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
-                                            obcaecati
-                                            aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <p>Card with reduced padding: Add the class <code>halton-card--small</code> to
-                                <code> class="halton-card ..."</code> to acheive this effect.
-                            </p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div
-                                    class="halton-card halton-card--small card">
-                                    <div class="card-body">
-                                        <h3 class="card-title component-title">Title</h3>
-
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
-                                            obcaecati
-                                            aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <p>Card icon with reduced padding: Add the class <code>halton-card--small</code> to
-                                <code> class="halton-card ..."</code> to acheive this effect.
-                            </p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div
-                                    class="halton-card halton-card--small card card-icon icon-before icon-info icon-big">
-                                    <div class="card-body">
-                                        <h3 class="card-title component-title">Title</h3>
-
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
-                                            obcaecati
-                                            aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="row text-center bottom-section-spacer-sm">
-                        <h2>Colored Cards</h2>
-                    </div>
+                <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                    title="Click to copy HTML">
                     <div class="row rbeh">
-                        <div class="col-md-6">
-                            <p>Card with reduced padding: Add the class <code>theme-info</code> to
-                                <code> class="halton-card card ..."</code> to acheive this effect.
-                            </p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-card card theme-info card-icon icon-before icon-info icon-big">
-                                    <div class="card-body">
-                                        <h3 class="card-title component-title">Title</h3>
-
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
-                                            obcaecati
-                                            aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
-                                    </div>
-                                </div>
+                        <section class="col-md-4 bx-container">
+                            <div class="halton-alert theme-warning bottom-section-spacer-sm rbeh-item">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Card with reduced padding: Add the class <code>theme-success</code> to
-                                <code> class="halton-card card ..."</code> to acheive this effect.
-                            </p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-card card theme-success card-icon icon-before icon-info icon-big">
-                                    <div class="card-body">
-                                        <h3 class="card-title component-title">Title</h3>
-
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
-                                            obcaecati
-                                            aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Card with reduced padding: Add the class <code>theme-warning</code> to
-                                <code> class="halton-card card ..."</code> to acheive this effect.
-                            </p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-card card theme-warning card-icon icon-before icon-info icon-big">
-                                    <div class="card-body">
-                                        <h3 class="card-title component-title">Title</h3>
-
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
-                                            obcaecati
-                                            aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Card with reduced padding: Add the class <code>theme-infrastructure</code> to
-                                <code> class="halton-card card ..."</code> to acheive this effect.
-                            </p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-card card theme-infrastructure card-icon icon-before icon-info icon-big">
-                                    <div class="card-body">
-                                        <h3 class="card-title component-title">Title</h3>
-
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
-                                            obcaecati
-                                            aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Card with reduced padding: Add the class <code>theme-excellence</code> to
-                                <code> class="halton-card card ..."</code> to acheive this effect.
-                            </p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-card card theme-excellence card-icon icon-before icon-info icon-big">
-                                    <div class="card-body">
-                                        <h3 class="card-title component-title">Title</h3>
-
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
-                                            obcaecati
-                                            aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <p>Card with reduced padding: Add the class <code>theme-emergency</code> to
-                                <code> class="halton-card card ..."</code> to acheive this effect.
-                            </p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-card card theme-emergency card-icon icon-before icon-info icon-big">
-                                    <div class="card-body">
-                                        <h3 class="card-title component-title">Title</h3>
-
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
-                                            obcaecati
-                                            aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
+                        </section>
 
 
+                        <section class="col-md-3 col-lg-offset-1 bx-container">
+                            <aside
+                                class="halton-alert halton-alert-transparent-bdr alert-icon icon-before icon-big icon-summary bottom-section-spacer rbeh-item">
+                                <h3 class="component-title bottom-section-spacer-sm">Sidebar title</h3>
 
+                                <h4>Subtitle</h4>
+                                <ul class="list-v-align bottom-section-spacer-sm">
+                                    <li>Lorem ipsum dolor sit</li>
+                                    <li>consectetur adipisicing elit</li>
+                                    <li>Tempore quibusdam esse</li>
+                                    <li>Quo at iusto deleniti</li>
+                                </ul>
 
-
-
-
-        <div class="row bottom-section-spacer-md">
-            <div class="col-md-12">
-                <div class="demoBoxes">
-                    <div class="row bottom-section-spacer-md">
-                        <div class="col-md-6 col-md-offset-3 text-center">
-                            <h1 class="component-title">Digital Service Callout</h1>
-                            <div>
-                                <span class="badge badge-primary">Introduction text needed</span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
-                                explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
-                                suscipit sint eius, alias officiis.</p>
-                        </div>
-                    </div>
-
-
-                    
-                            
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-
-                                <div class="bx-container">
-                                    <div class="halton-callout-box">
-                                        <article class="halton-callout-box__wrapper">
-                                            <span class="halton-callout-box__subtitle">New Service</span>
-                                            <h2 class="halton-callout-box__title">Lorem ipsum dolor sit amet,
-                                                consectetur</h2>
-                                            <p>Lorem ipsum dolor sit amet, <a class="link-underlined link-icon icon-after icon-pdf" href="#">Link message <span class="sr-only">(PDF link)</span> consectetur adipiscing elit</a>. Ut et massa mi.
-                                                Aliquam in hendrerit urna ellentesque sit amet sapien.</p>
-                                            <a href="#"
-                                                class="btn halton-btn text-icon icon-after icon-arrow-right">Check
-                                                it out now</a>
-                                        </article>
-
-                                        <img class="halton-callout-box__img"
-                                            src="https://media.istockphoto.com/id/503492356/photo/checking-new-menu.jpg?s=1024x1024&w=is&k=20&c=-wviOG8bIWUVJRtYZ06_1FapwjCuct_3zTq9U7k914g="
-                                            alt="Calloutbox message">
-                                    </div>
+                                <h4>Subtitle</h4>
+                                <div class="bottom-section-spacer-md">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto
+                                        deleniti hic eius
+                                        explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic,
+                                        molestiae rem
+                                        suscipit sint eius, alias officiis.</p>
                                 </div>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-        <div class="row bottom-section-spacer-md">
-            <div class="col-md-12">
-                <div class="demoBoxes">
-                    <div class="row bottom-section-spacer-md">
-                        <div class="col-md-6 col-md-offset-3 text-center">
-                            <h1 class="component-title">Tabs</h1>
-                            <div>
-                                <span class="badge badge-primary">Introduction text needed</span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
-                                explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
-                                suscipit sint eius, alias officiis.</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
                                 <div>
-                                    <ul class="nav nav-tabs halton-nav-tabs">
-                                        <li class="active"><a data-toggle="pill" role="tab" href="#home-Phase1">Phase
-                                                1</a></li>
-                                        <li><a data-toggle="pill" role="tab" href="#menu1-Phase2">Phase 2</a></li>
-                                        <li><a data-toggle="pill" role="tab" href="#menu1-Phase3">Phase 3</a></li>
-                                    </ul>
+                                    <h4>Read More</h4>
+                                    <a class="link-underlined" href="#">Call to action text</a>.
+                                </div>
 
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade active in" id="home-Phase1">
-                                            <h3>Content 1</h3>
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse maxime
-                                                consequuntur incidunt. Ipsum fugit deleniti sint, aspernatur consequatur
-                                                ullam in tempore dicta! Suscipit modi omnis obcaecati consequuntur
-                                                reprehenderit voluptates nulla.</p>
-                                        </div>
+                            </aside>
+                        </section>
 
-                                        <div class="tab-pane fade" id="menu1-Phase2">
-                                            <h3>Content 2</h3>
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse maxime
-                                                consequuntur incidunt. Ipsum fugit deleniti sint, aspernatur consequatur
-                                                ullam in tempore dicta! Suscipit modi omnis obcaecati consequuntur
-                                                reprehenderit voluptates nulla.</p>
-                                        </div>
 
-                                        <div class="tab-pane fade" id="menu1-Phase3">
-                                            <h3>Content 3</h3>
-                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse maxime
-                                                consequuntur incidunt. Ipsum fugit deleniti sint, aspernatur consequatur
-                                                ullam in tempore dicta! Suscipit modi omnis obcaecati consequuntur
-                                                reprehenderit voluptates nulla.</p>
-                                        </div>
-                                    </div>
+                        <section class="col-md-2 col-lg-offset-1 bx-container">
+                            <div
+                                class="halton-card card theme-excellence card-icon icon-before icon-info icon-big rbeh-item">
+                                <div class="card-body">
+                                    <h3 class="card-title component-title">Title</h3>
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
+                                        obcaecati
+                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+            </div> 
+        </div>
+
+
+
+
+
+
+        <div id="section-alerts" class="demoBoxes">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 text-center bottom-section-spacer-md">
+                        <h1 class="component-title text-center">
+                            Alerts
+                        </h1>
+                        <h2 class="component-title">Default alerts</h2>
+                        <div>
+                            <span class="badge badge-primary">Introduction text needed</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
+                            explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
+                            suscipit sint eius, alias officiis.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-alert bottom-section-spacer-sm">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div
+                                class="halton-alert alert-icon icon-before icon-info icon-big bottom-section-spacer-sm">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-alert bottom-section-spacer-sm">
+                                <h2 class="alert-title component-title">Alert Title</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-alert bottom-section-spacer-sm">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi!</p>
+
+                                <div class="alert-footer">
+                                    <a class="link-icon icon-before icon-pdf" href="#">Link message</a>
+                                    <a class="link-icon icon-before icon-pdf" href="#">Link message</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+
+
+                <div class="row bottom-section-spacer-md">
+                    <div class="col-md-6">
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-alert bottom-section-spacer-sm">
+                                <h2 class="component-title">Alert Title</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi!</p>
+
+                                <div class="alert-footer">
+                                    <a class="link-icon icon-before icon-pdf" href="#">Link message</a>
+                                    <a class="link-icon icon-before icon-pdf" href="#">Link message</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div
+                                class="halton-alert alert-icon icon-before icon-info icon-big bottom-section-spacer-sm">
+                                <h2 class="component-title">Alert Title</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi!</p>
+
+                                <div class="alert-footer">
+                                    <a class="link-icon icon-before icon-pdf" href="#">Link message</a>
+                                    <a class="link-icon icon-before icon-pdf" href="#">Link message</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row bottom-section-spacer-sm">
+                    <div class="col-md-6 col-md-offset-3 text-center bottom-section-spacer-sm">
+                        <h2 class="component-title">Types of Alerts</h2>
+                        <div>
+                            <span class="badge badge-primary">Introduction text needed</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
+                            explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
+                            suscipit sint eius, alias officiis.</p>
+                    </div>
+                </div>
+
+                <div class="row bottom-section-spacer-sm">
+                    <div class="col-md-6">
+                        <p>Default alert (no addition needed).</p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-alert bottom-section-spacer-sm">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Add <code>theme-success</code> to <code> class="halton-alert ..."</code> to acheive this
+                            effect.
+                        </p>
+                        <div class="bx-container elementToCopy bottom-section-spacer-sm" data-toggle="tooltip"
+                            data-placement="top" title="Click to copy HTML">
+                            <div class="halton-alert theme-success bottom-section-spacer-sm">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p>Add <code>theme-info</code> to <code> class="halton-alert ..."</code> to acheive this
+                            effect.
+                        </p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-alert theme-info bottom-section-spacer-sm">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Add <code>theme-warning</code> to <code> class="halton-alert ..."</code> to acheive this
+                            effect.
+                        </p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-alert theme-warning bottom-section-spacer-sm">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p>Add <code>theme-infrastructure</code> to <code> class="halton-alert ..."</code> to
+                            acheive this effect.
+                        </p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-alert theme-infrastructure bottom-section-spacer-sm">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Add <code>theme-excellence</code> to <code> class="halton-alert ..."</code> to acheive
+                            this effect.
+                        </p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-alert theme-excellence bottom-section-spacer-sm">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Add <code>theme-emergency</code> to <code> class="halton-alert ..."</code> to acheive
+                            this effect.
+                        </p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-alert theme-emergency bottom-section-spacer-sm">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum fugit
+                                    dignissimos quisquam perspiciatis nisi! Blanditiis deserunt vero unde!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        
+
+
+        <div id="section-cards" class="demoBoxes">   
+            <div class="container">
+                <div class="row bottom-section-spacer-md">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h1 class="component-title">Cards</h1>
+                        <div>
+                            <span class="badge badge-primary">Introduction text needed</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
+                            explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
+                            suscipit sint eius, alias officiis.</p>
+                    </div>
+                </div>
+
+                <div class="row rbeh bottom-section-spacer-md">
+                    <div class="col-md-6">
+                        <p>Default card (no addition needed).</p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-card card">
+                                <div class="card-body">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
+                                        obcaecati
+                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p>Card with title.</p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-card card">
+                                <div class="card-body">
+                                    <h3 class="card-title component-title">Title</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p>Card with icon.</p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-card card card-icon icon-before icon-info icon-big">
+                                <div class="card-body">
+                                    <h3 class="card-title component-title">Title</h3>
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
+                                        obcaecati
+                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p>Card with reduced padding: Add the class <code>halton-card--small</code> to
+                            <code> class="halton-card ..."</code> to acheive this effect.
+                        </p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-card halton-card--small card">
+                                <div class="card-body">
+                                    <h3 class="card-title component-title">Title</h3>
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
+                                        obcaecati
+                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p>Card icon with reduced padding: Add the class <code>halton-card--small</code> to
+                            <code> class="halton-card ..."</code> to acheive this effect.
+                        </p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div
+                                class="halton-card halton-card--small card card-icon icon-before icon-info icon-big">
+                                <div class="card-body">
+                                    <h3 class="card-title component-title">Title</h3>
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
+                                        obcaecati
+                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row text-center bottom-section-spacer-sm">
+                    <h2>Colored Cards</h2>
+                </div>
+                <div class="row rbeh">
+                    <div class="col-md-6">
+                        <p>Card with reduced padding: Add the class <code>theme-info</code> to
+                            <code> class="halton-card card ..."</code> to acheive this effect.
+                        </p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-card card theme-info card-icon icon-before icon-info icon-big">
+                                <div class="card-body">
+                                    <h3 class="card-title component-title">Title</h3>
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
+                                        obcaecati
+                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Card with reduced padding: Add the class <code>theme-success</code> to
+                            <code> class="halton-card card ..."</code> to acheive this effect.
+                        </p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-card card theme-success card-icon icon-before icon-info icon-big">
+                                <div class="card-body">
+                                    <h3 class="card-title component-title">Title</h3>
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
+                                        obcaecati
+                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Card with reduced padding: Add the class <code>theme-warning</code> to
+                            <code> class="halton-card card ..."</code> to acheive this effect.
+                        </p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-card card theme-warning card-icon icon-before icon-info icon-big">
+                                <div class="card-body">
+                                    <h3 class="card-title component-title">Title</h3>
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
+                                        obcaecati
+                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Card with reduced padding: Add the class <code>theme-infrastructure</code> to
+                            <code> class="halton-card card ..."</code> to acheive this effect.
+                        </p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div
+                                class="halton-card card theme-infrastructure card-icon icon-before icon-info icon-big">
+                                <div class="card-body">
+                                    <h3 class="card-title component-title">Title</h3>
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
+                                        obcaecati
+                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Card with reduced padding: Add the class <code>theme-excellence</code> to
+                            <code> class="halton-card card ..."</code> to acheive this effect.
+                        </p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-card card theme-excellence card-icon icon-before icon-info icon-big">
+                                <div class="card-body">
+                                    <h3 class="card-title component-title">Title</h3>
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
+                                        obcaecati
+                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p>Card with reduced padding: Add the class <code>theme-emergency</code> to
+                            <code> class="halton-card card ..."</code> to acheive this effect.
+                        </p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-card card theme-emergency card-icon icon-before icon-info icon-big">
+                                <div class="card-body">
+                                    <h3 class="card-title component-title">Title</h3>
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eos
+                                        obcaecati
+                                        aliquam assumenda animi reiciendis voluptate debitis! Nisi maxime.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </div>
@@ -966,254 +1094,373 @@
 
 
 
-        <div class="row bottom-section-spacer-md">
-            <div class="col-md-12">
-                <div class="demoBoxes">
-                    <div class="row bottom-section-spacer-md">
-                        <div class="col-md-6 col-md-offset-3 text-center">
-                            <h1 class="component-title">Media row</h1>
+        <div id="section-digitservcall" class="demoBoxes">   
+            <div class="container">
+                <div class="row bottom-section-spacer-md">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h1 class="component-title">Digital Service Callout</h1>
+                        <div>
+                            <span class="badge badge-primary">Introduction text needed</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
+                            explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
+                            suscipit sint eius, alias officiis.</p>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+
+                            <div class="bx-container">
+                                <div class="halton-callout-box">
+                                    <article class="halton-callout-box__wrapper">
+                                        <span class="halton-callout-box__subtitle">New Service</span>
+                                        <h2 class="halton-callout-box__title">Lorem ipsum dolor sit amet,
+                                            consectetur</h2>
+                                        <p>Lorem ipsum dolor sit amet, <a
+                                                class="link-underlined link-icon icon-after icon-pdf" href="#">Link
+                                                message <span class="sr-only">(PDF link)</span> consectetur
+                                                adipiscing elit</a>. Ut et massa mi.
+                                            Aliquam in hendrerit urna ellentesque sit amet sapien.</p>
+                                        <a href="#"
+                                            class="btn halton-btn text-icon icon-after icon-arrow-right">Check
+                                            it out now</a>
+                                    </article>
+
+                                    <img class="halton-callout-box__img"
+                                        src="https://media.istockphoto.com/id/503492356/photo/checking-new-menu.jpg?s=1024x1024&w=is&k=20&c=-wviOG8bIWUVJRtYZ06_1FapwjCuct_3zTq9U7k914g="
+                                        alt="Calloutbox message">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+ 
+
+        <div id="section-tabs" class="demoBoxes">
+            <div class="container">
+                <div class="row bottom-section-spacer-md">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h1 class="component-title">Tabs</h1>
+                        <div>
+                            <span class="badge badge-primary">Introduction text needed</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
+                            explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
+                            suscipit sint eius, alias officiis.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
                             <div>
-                                <span class="badge badge-primary">Introduction text needed</span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
-                                explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
-                                suscipit sint eius, alias officiis.</p>
-                        </div>
-                    </div>
+                                <ul class="nav nav-tabs halton-nav-tabs">
+                                    <li class="active"><a data-toggle="pill" role="tab" href="#home-Phase1">Phase
+                                            1</a></li>
+                                    <li><a data-toggle="pill" role="tab" href="#menu1-Phase2">Phase 2</a></li>
+                                    <li><a data-toggle="pill" role="tab" href="#menu1-Phase3">Phase 3</a></li>
+                                </ul>
 
-                    <h2 class="text-center bottom-section-spacer-sm">Three columns</h2>
-
-                    <div class="bx-container elementToCopy bottom-section-spacer-md" data-toggle="tooltip"
-                        data-placement="top" title="Click to copy HTML">
-                        <div class="row">
-                            <div class="col-sm-4 col-md-4">
-                                <div class="thumbnail">
-                                    <a href="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx"
-                                        class="gallery-thumb-wrap" data-pswp-width="1024" data-pswp-height="682">
-                                        <img class="img-fluid"
-                                            src="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx" />
-                                    </a>
-
-                                    <div class="caption">
-                                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
-                                        <p>Consectetur adipisicing:</p>
-                                        <ul class="list-v-align list-icon-check">
-                                            <li>Lorem ipsum dolor sit amet</li>
-                                            <li>Sit amet consectetur</li>
-                                            <li>Consectetur adipisicing</li>
-                                            <li>Adipisicing elit</li>
-                                        </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade active in" id="home-Phase1">
+                                        <h3>Content 1</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse maxime
+                                            consequuntur incidunt. Ipsum fugit deleniti sint, aspernatur consequatur
+                                            ullam in tempore dicta! Suscipit modi omnis obcaecati consequuntur
+                                            reprehenderit voluptates nulla.</p>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-md-4">
-                                <div class="thumbnail">
-                                    <a href="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx"
-                                        class="gallery-thumb-wrap" data-pswp-width="1024" data-pswp-height="682">
-                                        <img class="img-fluid"
-                                            src="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx" />
-                                    </a>
 
-                                    <div class="caption">
-                                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
-                                        <p>Consectetur adipisicing:</p>
-                                        <ul class="list-v-align list-icon-check">
-                                            <li>Lorem ipsum dolor sit amet</li>
-                                            <li>Sit amet consectetur</li>
-                                            <li>Consectetur adipisicing</li>
-                                            <li>Adipisicing elit</li>
-                                        </ul>
+                                    <div class="tab-pane fade" id="menu1-Phase2">
+                                        <h3>Content 2</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse maxime
+                                            consequuntur incidunt. Ipsum fugit deleniti sint, aspernatur consequatur
+                                            ullam in tempore dicta! Suscipit modi omnis obcaecati consequuntur
+                                            reprehenderit voluptates nulla.</p>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4 col-md-4">
-                                <div class="thumbnail">
-                                    <a href="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx"
-                                        class="gallery-thumb-wrap" data-pswp-width="1024" data-pswp-height="682">
-                                        <img class="img-fluid"
-                                            src="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx" />
-                                    </a>
 
-                                    <div class="caption">
-                                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
-                                        <p>Consectetur adipisicing:</p>
-                                        <ul class="list-v-align list-icon-check">
-                                            <li>Lorem ipsum dolor sit amet</li>
-                                            <li>Sit amet consectetur</li>
-                                            <li>Consectetur adipisicing</li>
-                                            <li>Adipisicing elit</li>
-                                        </ul>
+                                    <div class="tab-pane fade" id="menu1-Phase3">
+                                        <h3>Content 3</h3>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse maxime
+                                            consequuntur incidunt. Ipsum fugit deleniti sint, aspernatur consequatur
+                                            ullam in tempore dicta! Suscipit modi omnis obcaecati consequuntur
+                                            reprehenderit voluptates nulla.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-
-                    <h2 class="text-center bottom-section-spacer-sm">Two columns</h2>
-
-                    <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                        title="Click to copy HTML">
-                        <div class="row">
-                            <div class="col-sm-6 col-md-6">
-                                <div class="thumbnail">
-                                    <a href="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx"
-                                        class="gallery-thumb-wrap" data-pswp-width="1024" data-pswp-height="682">
-                                        <img class="img-fluid"
-                                            src="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx" />
-                                    </a>
-
-                                    <div class="caption">
-                                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
-                                        <p>Consectetur adipisicing:</p>
-                                        <ul class="list-v-align list-icon-check">
-                                            <li>Lorem ipsum dolor sit amet</li>
-                                            <li>Sit amet consectetur</li>
-                                            <li>Consectetur adipisicing</li>
-                                            <li>Adipisicing elit</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6 col-md-6">
-                                <div class="thumbnail">
-                                    <a href="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx"
-                                        class="gallery-thumb-wrap" data-pswp-width="1024" data-pswp-height="682">
-                                        <img class="img-fluid"
-                                            src="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx" />
-                                    </a>
-
-                                    <div class="caption">
-                                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
-                                        <p>Consectetur adipisicing:</p>
-                                        <ul class="list-v-align list-icon-check">
-                                            <li>Lorem ipsum dolor sit amet</li>
-                                            <li>Sit amet consectetur</li>
-                                            <li>Consectetur adipisicing</li>
-                                            <li>Adipisicing elit</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
                 </div>
             </div>
         </div>
 
-        
 
 
 
-        
 
-        <div class="row bottom-section-spacer-md">
-            <div class="col-md-12">
-                <div class="demoBoxes">
-                    <div class="row bottom-section-spacer-md">
-                        <div class="col-md-6 col-md-offset-3 text-center">
-                            <h1 class="component-title">Modals</h1>
-                            <p>Modals improve the readability of busy web pages by presenting information, messages, or interactive elements in a way that doesn't clutter the main interface.</p>
-                            <p>Follow the <a class="link-underlined link-icon is-bold icon-after icon-external" href="https://getbootstrap.com/docs/4.6/components/modal/#live-demo" target="_blank">Bootstrap (v4) modal guideline</a> for code implementation.</p>
+
+
+        <div id="section-mediarow" class="demoBoxes">
+            <div class="container">
+                <div class="row bottom-section-spacer-md">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h1 class="component-title">Media row</h1>
+                        <div>
+                            <span class="badge badge-primary">Introduction text needed</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
+                            explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
+                            suscipit sint eius, alias officiis.</p>
+                    </div>
+                </div>
+
+                <h2 class="text-center bottom-section-spacer-sm">Three columns</h2>
+
+                <div class="bx-container elementToCopy bottom-section-spacer-md" data-toggle="tooltip"
+                    data-placement="top" title="Click to copy HTML">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4">
+                            <div class="thumbnail">
+                                <a href="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx"
+                                    class="gallery-thumb-wrap" data-pswp-width="1024" data-pswp-height="682">
+                                    <img class="img-fluid"
+                                        src="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx" />
+                                </a>
+
+                                <div class="caption">
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                                    <p>Consectetur adipisicing:</p>
+                                    <ul class="list-v-align list-icon-check">
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Sit amet consectetur</li>
+                                        <li>Consectetur adipisicing</li>
+                                        <li>Adipisicing elit</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <div class="thumbnail">
+                                <a href="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx"
+                                    class="gallery-thumb-wrap" data-pswp-width="1024" data-pswp-height="682">
+                                    <img class="img-fluid"
+                                        src="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx" />
+                                </a>
+
+                                <div class="caption">
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                                    <p>Consectetur adipisicing:</p>
+                                    <ul class="list-v-align list-icon-check">
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Sit amet consectetur</li>
+                                        <li>Consectetur adipisicing</li>
+                                        <li>Adipisicing elit</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4">
+                            <div class="thumbnail">
+                                <a href="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx"
+                                    class="gallery-thumb-wrap" data-pswp-width="1024" data-pswp-height="682">
+                                    <img class="img-fluid"
+                                        src="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx" />
+                                </a>
+
+                                <div class="caption">
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                                    <p>Consectetur adipisicing:</p>
+                                    <ul class="list-v-align list-icon-check">
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Sit amet consectetur</li>
+                                        <li>Consectetur adipisicing</li>
+                                        <li>Adipisicing elit</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-2 col-lg-offset-5">
-                            <button class="btn btn-primary" data-target="#sample-modal" data-toggle="modal">Open a
-                                sample modal</button>
+                </div>
 
-                            <div aria-hidden="true" aria-labelledby="sample-modal" class="modal fade" id="sample-modal"
-                                role="dialog" style="margin: 1em; display: none" tabindex="-1">
-                                <div class="halton-modal modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h3 class="modal-title">Quo at iusto deleniti hic eius
-                                                explicabo corporis</h3>
-                                            <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <p>
-                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
-                                                possimus quisquam eius, amet soluta voluptas autem facilis, quasi error
-                                                quia temporibus. Suscipit placeat autem nisi ex esse enim aspernatur
-                                                unde.
-                                            </p>
-                                            <ul class="list-v-align">
-                                                <li>
-                                                    Lorem ipsum dolor, sit amet consectetur
-                                                </li>
-                                                <li>
-                                                    Maxime possimus quisquam eius, amet
-                                                </li>
-                                                <li>
-                                                    amet soluta voluptas autem facilis
-                                                </li>
-                                                <li>
-                                                    voluptas autem facilis, quasi error quia temporibu
-                                                </li>
-                                                <li>
-                                                    Suscipit placeat autem nisi ex esse enim aspernatur
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <a target="_blank" class="link-icon icon-before icon-external"
-                                                href="#">Suscipit placeat autem nisi ex esse enim aspernatur unde.</a>
-                                        </div>
+
+
+
+
+
+                <h2 class="text-center bottom-section-spacer-sm">Two columns</h2>
+
+                <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                    title="Click to copy HTML">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                            <div class="thumbnail">
+                                <a href="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx"
+                                    class="gallery-thumb-wrap" data-pswp-width="1024" data-pswp-height="682">
+                                    <img class="img-fluid"
+                                        src="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx" />
+                                </a>
+
+                                <div class="caption">
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                                    <p>Consectetur adipisicing:</p>
+                                    <ul class="list-v-align list-icon-check">
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Sit amet consectetur</li>
+                                        <li>Consectetur adipisicing</li>
+                                        <li>Adipisicing elit</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-6">
+                            <div class="thumbnail">
+                                <a href="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx"
+                                    class="gallery-thumb-wrap" data-pswp-width="1024" data-pswp-height="682">
+                                    <img class="img-fluid"
+                                        src="https://www.halton.ca/getmedia/c58e06bc-7e91-4421-886c-1deb01f5dede/Britannia-Road-Widening-View-West.aspx" />
+                                </a>
+
+                                <div class="caption">
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+                                    <p>Consectetur adipisicing:</p>
+                                    <ul class="list-v-align list-icon-check">
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Sit amet consectetur</li>
+                                        <li>Consectetur adipisicing</li>
+                                        <li>Adipisicing elit</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div> 
+        </div>
+
+
+
+
+
+
+
+        <div id="section-modal" class="demoBoxes"> 
+            <div class="container">
+                <div class="row bottom-section-spacer-md">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h1 class="component-title">Modals</h1>
+                        <p>Modals improve the readability of busy web pages by presenting information, messages, or
+                            interactive elements in a way that doesn't clutter the main interface.</p>
+                        <p>Follow the <a class="link-underlined link-icon is-bold icon-after icon-external"
+                                href="https://getbootstrap.com/docs/4.6/components/modal/#live-demo"
+                                target="_blank">Bootstrap (v4) modal guideline</a> for code implementation.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2 col-lg-offset-5">
+                        <button class="btn btn-primary" data-target="#sample-modal" data-toggle="modal">Open a
+                            sample modal</button>
+
+                        <div aria-hidden="true" aria-labelledby="sample-modal" class="modal fade" id="sample-modal"
+                            role="dialog" style="margin: 1em; display: none" tabindex="-1">
+                            <div class="halton-modal modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title">Quo at iusto deleniti hic eius
+                                            explicabo corporis</h3>
+                                        <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+                                            possimus quisquam eius, amet soluta voluptas autem facilis, quasi error
+                                            quia temporibus. Suscipit placeat autem nisi ex esse enim aspernatur
+                                            unde.
+                                        </p>
+                                        <ul class="list-v-align">
+                                            <li>
+                                                Lorem ipsum dolor, sit amet consectetur
+                                            </li>
+                                            <li>
+                                                Maxime possimus quisquam eius, amet
+                                            </li>
+                                            <li>
+                                                amet soluta voluptas autem facilis
+                                            </li>
+                                            <li>
+                                                voluptas autem facilis, quasi error quia temporibu
+                                            </li>
+                                            <li>
+                                                Suscipit placeat autem nisi ex esse enim aspernatur
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a target="_blank" class="link-icon icon-before icon-external"
+                                            href="#">Suscipit placeat autem nisi ex esse enim aspernatur unde.</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
 
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <code>
-                                <pre>
-                                    &lt;div aria-hidden=&quot;true&quot; aria-labelledby=&quot;sample-modal&quot; class=&quot;modal fade&quot; id=&quot;sample-modal&quot;
-                                role=&quot;dialog&quot; style=&quot;margin: 1em; display: none&quot; tabindex=&quot;-1&quot;&gt;
+                <div class="row">
+                    <div class="col-lg-12">
+                        <code>
+                            <pre>
+                                &lt;div aria-hidden=&quot;true&quot; aria-labelledby=&quot;sample-modal&quot; class=&quot;modal fade&quot; id=&quot;sample-modal&quot;
+                            role=&quot;dialog&quot; style=&quot;margin: 1em; display: none&quot; tabindex=&quot;-1&quot;&gt;
 
-                                        &lt;div class=&quot;halton-modal modal-dialog&quot; role=&quot;document&quot;&gt;
-                                            &lt;div class=&quot;modal-content&quot;&gt;
-                                                &lt;div class=&quot;modal-header&quot;&gt;
-                                                    &lt;h3 class=&quot;modal-title&quot;&gt;Quo at iusto deleniti hic eius&lt;/h3&gt;
-                                                    &lt;button aria-label=&quot;Close&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; type=&quot;button&quot;&gt;
-                                                        &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
-                                                    &lt;/button&gt;
-                                                &lt;/div&gt;
-                                                &lt;div class=&quot;modal-body&quot;&gt;
-                                                <span class="badge badge-danger">For accessibility purpose: Never place an &lt;h1&gt;,  &lt;h2&gt;, &lt;h3&gt; in this area!</span>
-                                                    &lt;p&gt;
-                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
-                                                        possimus quisquam eius, amet soluta voluptas autem facilis, quasi error
-                                                        quia temporibus. Suscipit placeat autem nisi ex esse enim aspernatur
-                                                        unde.
-                                                    &lt;/p&gt;
-                                                &lt;/div&gt;
-                                                &lt;div class=&quot;modal-footer&quot;&gt;
-                                                    &lt;a target=&quot;_blank&quot; class=&quot;link-icon icon-before icon-external&quot;
-                                                        href=&quot;#&quot;&gt;Suscipit placeat autem nisi ex esse enim aspernatur unde.&lt;/a&gt;
-                                                &lt;/div&gt;
+                                    &lt;div class=&quot;halton-modal modal-dialog&quot; role=&quot;document&quot;&gt;
+                                        &lt;div class=&quot;modal-content&quot;&gt;
+                                            &lt;div class=&quot;modal-header&quot;&gt;
+                                                &lt;h3 class=&quot;modal-title&quot;&gt;Quo at iusto deleniti hic eius&lt;/h3&gt;
+                                                &lt;button aria-label=&quot;Close&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; type=&quot;button&quot;&gt;
+                                                    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+                                                &lt;/button&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class=&quot;modal-body&quot;&gt;
+                                            <span class="badge badge-danger">For accessibility purpose: Never place an &lt;h1&gt;,  &lt;h2&gt;, &lt;h3&gt; in this area!</span>
+                                                &lt;p&gt;
+                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime
+                                                    possimus quisquam eius, amet soluta voluptas autem facilis, quasi error
+                                                    quia temporibus. Suscipit placeat autem nisi ex esse enim aspernatur
+                                                    unde.
+                                                &lt;/p&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class=&quot;modal-footer&quot;&gt;
+                                                &lt;a target=&quot;_blank&quot; class=&quot;link-icon icon-before icon-external&quot;
+                                                    href=&quot;#&quot;&gt;Suscipit placeat autem nisi ex esse enim aspernatur unde.&lt;/a&gt;
                                             &lt;/div&gt;
                                         &lt;/div&gt;
                                     &lt;/div&gt;
-                                </pre>
-                            </code>
-                        </div>
+                                &lt;/div&gt;
+                            </pre>
+                        </code>
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
 
 
@@ -1223,77 +1470,74 @@
 
 
 
-        <div class="row bottom-section-spacer-md">
-            <div class="col-md-12">
-                <div class="demoBoxes">
-                    <div class="row bottom-section-spacer-md">
-                        <div class="col-md-6 col-md-offset-3 text-center">
-                            <h1 class="component-title">Accordion</h1>
-                            <div>
-                                <span class="badge badge-primary">Introduction text needed</span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
-                                explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
-                                suscipit sint eius, alias officiis.</p>
+        <div id="section-accordion" class="demoBoxes">        
+            <div class="container">
+                <div class="row bottom-section-spacer-md">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h1 class="component-title">Accordion</h1>
+                        <div>
+                            <span class="badge badge-primary">Introduction text needed</span>
                         </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
+                            explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
+                            suscipit sint eius, alias officiis.</p>
                     </div>
+                </div>
 
-                    <div class="row">
-                        <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-12">
 
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                                title="Click to copy HTML">
-                                <div class="halton-collapse panel-group" id="halton-accordion" role="tablist"
-                                    aria-multiselectable="true">
-                                    <div class="panel panel-default halton-panel-active">
-                                        <div class="panel-heading" role="tab" id="headingOne">
-                                            <h4 class="panel-title">
-                                                <a role="button" data-toggle="collapse" data-parent="#halton-accordion"
-                                                    href="#collapseOne" aria-expanded="true"
-                                                    aria-controls="collapseOne">
-                                                    Lorem ipsum dolor sit amet
-                                                </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
-                                            aria-labelledby="headingOne">
-                                            <div class="panel-body">
-                                                <ul class="list-v-align">
-                                                    <li>Quo at iusto deleniti hic eius
-                                                        explicabo corporis</li>
-                                                    <li>molestiae rem suscipit sint eius</li>
-                                                    <li>Tempore quibusdam esse ipsam necessitatibus</li>
-                                                </ul>
-                                            </div>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <div class="halton-collapse panel-group" id="halton-accordion" role="tablist"
+                                aria-multiselectable="true">
+                                <div class="panel panel-default halton-panel-active">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <h4 class="panel-title">
+                                            <a role="button" data-toggle="collapse" data-parent="#halton-accordion"
+                                                href="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                Lorem ipsum dolor sit amet
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                                        aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            <ul class="list-v-align">
+                                                <li>Quo at iusto deleniti hic eius
+                                                    explicabo corporis</li>
+                                                <li>molestiae rem suscipit sint eius</li>
+                                                <li>Tempore quibusdam esse ipsam necessitatibus</li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingTwo">
-                                            <h3 class="panel-title">
-                                                <a class="collapsed" role="button" data-toggle="collapse"
-                                                    data-parent="#halton-accordion" href="#collapseTwo"
-                                                    aria-expanded="false" aria-controls="collapseTwo">
-                                                    Quo at iusto deleniti hic eius explicabo corporis
-                                                </a>
-                                            </h3>
-                                        </div>
-                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
-                                            aria-labelledby="headingTwo">
-                                            <div class="panel-body">
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at
-                                                    iusto deleniti hic eius
-                                                    explicabo corporis. Tempore quibusdam esse ipsam necessitatibus
-                                                    magni hic, molestiae rem
-                                                    suscipit sint eius, alias officiis.</p>
-                                            </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h3 class="panel-title">
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                                data-parent="#halton-accordion" href="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Quo at iusto deleniti hic eius explicabo corporis
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                        aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at
+                                                iusto deleniti hic eius
+                                                explicabo corporis. Tempore quibusdam esse ipsam necessitatibus
+                                                magni hic, molestiae rem
+                                                suscipit sint eius, alias officiis.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </div>
@@ -1304,199 +1548,199 @@
 
 
 
-        <div class="row bottom-section-spacer-md">
-            <div class="col-md-12">
-                <div class="demoBoxes">
-                    <div class="row bottom-section-spacer-md">
-                        <div class="col-md-6 col-md-offset-3 text-center">
-                            <h1 class="component-title">Timeline</h1>
-                            <div>
-                                <span class="badge badge-primary">Introduction text needed</span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
-                                explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
-                                suscipit sint eius, alias officiis.</p>
+        <div id="section-accordion" class="demoBoxes">                 
+            <div class="container">
+                <div class="row bottom-section-spacer-md">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h1 class="component-title">Timeline</h1>
+                        <div>
+                            <span class="badge badge-primary">Introduction text needed</span>
                         </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
+                            explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
+                            suscipit sint eius, alias officiis.</p>
                     </div>
-
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="bx-container elementToCopy bottom-section-spacer-md" data-toggle="tooltip"
-                                data-placement="top" title="Click to copy HTML">
-
-                                <section class="halton-timeline">
-                                    <h3 class="component-title">Timeline title</h3>
-
-                                    <ul>
-                                        <li>
-                                            <div>
-                                                <time>Block title</time>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at
-                                                    iusto deleniti hic eius explicabo corporis.</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <time>Block title</time>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at
-                                                    iusto deleniti hic eius explicabo corporis.</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <time>Block title</time>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at
-                                                    iusto deleniti hic eius explicabo corporis.</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <time>Block title</time>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at
-                                                    iusto deleniti hic eius explicabo corporis.</p>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div>
-                                                <time>Block title</time>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at
-                                                    iusto deleniti hic eius explicabo corporis.</p>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </section>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-
                 </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="bx-container elementToCopy bottom-section-spacer-md" data-toggle="tooltip"
+                            data-placement="top" title="Click to copy HTML">
+
+                            <section class="halton-timeline">
+                                <h3 class="component-title">Timeline title</h3>
+
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <time>Block title</time>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at
+                                                iusto deleniti hic eius explicabo corporis.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <time>Block title</time>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at
+                                                iusto deleniti hic eius explicabo corporis.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <time>Block title</time>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at
+                                                iusto deleniti hic eius explicabo corporis.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <time>Block title</time>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at
+                                                iusto deleniti hic eius explicabo corporis.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <time>Block title</time>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at
+                                                iusto deleniti hic eius explicabo corporis.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
             </div>
         </div>
 
 
 
 
+ 
 
-
-
-        <div class="row bottom-section-spacer-md">
-            <div class="col-md-12">
-                <div class="demoBoxes">
-                    <div class="row bottom-section-spacer-md">
-                        <div class="col-md-6 col-md-offset-3 text-center">
-                            <h1 class="component-title">Sidebar</h1>
-                            <div>
-                                <span class="badge badge-primary">Introduction text needed</span>
-                            </div>
-                            <p>The sidebar is a derivitive of <a href="#halton-alert" class="link-underlined">Alert</a>. Just by adding the class <code>halton-alert-transparent-bdr</code> to an alert, we obtain the sidebar which, like <a href="#halton-alert" class="link-underlined">Alert</a> can have icons and can be responsive.</code></p>
-                        </div>
+        <div id="section-sidebar" class="demoBoxes"> 
+            <div class="container">
+                <div class="row bottom-section-spacer-md">
+                    <div class="col-md-6 col-md-offset-3 text-center">
+                        <h1 class="component-title">Sidebar</h1>
+                        <p>The sidebar is a derivitive of <a href="#halton-alert" class="link-underlined">Alert</a>.
+                            Just by adding the class <code>halton-alert-transparent-bdr</code> to an alert, we
+                            obtain the sidebar which, like <a href="#halton-alert" class="link-underlined">Alert</a>
+                            can have icons and can be responsive.</code></p>
                     </div>
-
-
-
-                    <div class="row">
-                        <section class="col-md-4 bx-container">
-                            <p>Large screens</p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                            title="Click to copy HTML">
-                                <aside class="halton-alert halton-alert-transparent-bdr alert-icon icon-before icon-big icon-summary bottom-section-spacer">
-                                    <h3 class="component-title bottom-section-spacer-sm">Sidebar title</h3>
-
-                                    <h4>Subtitle</h4>
-                                    <ul class="list-v-align bottom-section-spacer-sm">
-                                        <li>Lorem ipsum dolor sit</li>
-                                        <li>consectetur adipisicing elit</li>
-                                        <li>Tempore quibusdam esse</li>
-                                        <li>Quo at iusto deleniti</li>
-                                    </ul>
-
-                                    <h4>Subtitle</h4>
-                                    <div class="bottom-section-spacer-md">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
-                                            explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
-                                            suscipit sint eius, alias officiis.</p>
-                                    </div>
-
-                                    <div>
-                                        <h4>Read More</h4>
-                                        <a class="link-underlined" href="#">Call to action text</a>.
-                                    </div>
-
-                                </aside>
-                            </div>
-                        </section>
-                        
-
-                        <section class="col-md-3 col-lg-offset-1 bx-container">
-                            <p>Medium screens</p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                            title="Click to copy HTML">
-                                <aside class="halton-alert halton-alert-transparent-bdr alert-icon icon-before icon-big icon-summary bottom-section-spacer">
-                                    <h3 class="component-title bottom-section-spacer-sm">Sidebar title</h3>
-
-                                    <h4>Subtitle</h4>
-                                    <ul class="list-v-align bottom-section-spacer-sm">
-                                        <li>Lorem ipsum dolor sit</li>
-                                        <li>consectetur adipisicing elit</li>
-                                        <li>Tempore quibusdam esse</li>
-                                        <li>Quo at iusto deleniti</li>
-                                    </ul>
-
-                                    <h4>Subtitle</h4>
-                                    <div class="bottom-section-spacer-md">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
-                                            explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
-                                            suscipit sint eius, alias officiis.</p>
-                                    </div>
-
-                                    <div>
-                                        <h4>Read More</h4>
-                                        <a class="link-underlined" href="#">Call to action text</a>.
-                                    </div>
-
-                                </aside>
-                            </div>
-                        </section>
-
-                
-                        <section class="col-md-2 col-lg-offset-1 bx-container">
-                            <p>Small screens</p>
-                            <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
-                            title="Click to copy HTML">
-                                <aside class="halton-alert halton-alert-transparent-bdr alert-icon icon-before icon-big icon-summary bottom-section-spacer">
-                                    <h3 class="component-title bottom-section-spacer-sm">Sidebar title</h3>
-
-                                    <h4>Subtitle</h4>
-                                    <ul class="list-v-align bottom-section-spacer-sm">
-                                        <li>Lorem ipsum dolor sit</li>
-                                        <li>consectetur adipisicing elit</li>
-                                        <li>Tempore quibusdam esse</li>
-                                        <li>Quo at iusto deleniti</li>
-                                    </ul>
-
-                                    <h4>Subtitle</h4>
-                                    <div class="bottom-section-spacer-md">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto deleniti hic eius
-                                            explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic, molestiae rem
-                                            suscipit sint eius, alias officiis.</p>
-                                    </div>
-
-                                    <div>
-                                        <h4>Read More</h4>
-                                        <a class="link-underlined" href="#">Call to action text</a>.
-                                    </div>
-
-                                </aside>
-                            </div>
-                        </section>
-                    </div>
-
-
                 </div>
-            </div>
+
+                <div class="row">
+                    <section class="col-md-4 bx-container">
+                        <p>Large screens</p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <aside
+                                class="halton-alert halton-alert-transparent-bdr alert-icon icon-before icon-big icon-summary bottom-section-spacer">
+                                <h3 class="component-title bottom-section-spacer-sm">Sidebar title</h3>
+
+                                <h4>Subtitle</h4>
+                                <ul class="list-v-align bottom-section-spacer-sm">
+                                    <li>Lorem ipsum dolor sit</li>
+                                    <li>consectetur adipisicing elit</li>
+                                    <li>Tempore quibusdam esse</li>
+                                    <li>Quo at iusto deleniti</li>
+                                </ul>
+
+                                <h4>Subtitle</h4>
+                                <div class="bottom-section-spacer-md">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto
+                                        deleniti hic eius
+                                        explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic,
+                                        molestiae rem
+                                        suscipit sint eius, alias officiis.</p>
+                                </div>
+
+                                <div>
+                                    <h4>Read More</h4>
+                                    <a class="link-underlined" href="#">Call to action text</a>.
+                                </div>
+
+                            </aside>
+                        </div>
+                    </section>
+
+
+                    <section class="col-md-3 col-lg-offset-1 bx-container">
+                        <p>Medium screens</p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <aside
+                                class="halton-alert halton-alert-transparent-bdr alert-icon icon-before icon-big icon-summary bottom-section-spacer">
+                                <h3 class="component-title bottom-section-spacer-sm">Sidebar title</h3>
+
+                                <h4>Subtitle</h4>
+                                <ul class="list-v-align bottom-section-spacer-sm">
+                                    <li>Lorem ipsum dolor sit</li>
+                                    <li>consectetur adipisicing elit</li>
+                                    <li>Tempore quibusdam esse</li>
+                                    <li>Quo at iusto deleniti</li>
+                                </ul>
+
+                                <h4>Subtitle</h4>
+                                <div class="bottom-section-spacer-md">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto
+                                        deleniti hic eius
+                                        explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic,
+                                        molestiae rem
+                                        suscipit sint eius, alias officiis.</p>
+                                </div>
+
+                                <div>
+                                    <h4>Read More</h4>
+                                    <a class="link-underlined" href="#">Call to action text</a>.
+                                </div>
+
+                            </aside>
+                        </div>
+                    </section>
+
+
+                    <section class="col-md-2 col-lg-offset-1 bx-container">
+                        <p>Small screens</p>
+                        <div class="bx-container elementToCopy" data-toggle="tooltip" data-placement="top"
+                            title="Click to copy HTML">
+                            <aside
+                                class="halton-alert halton-alert-transparent-bdr alert-icon icon-before icon-big icon-summary bottom-section-spacer">
+                                <h3 class="component-title bottom-section-spacer-sm">Sidebar title</h3>
+
+                                <h4>Subtitle</h4>
+                                <ul class="list-v-align bottom-section-spacer-sm">
+                                    <li>Lorem ipsum dolor sit</li>
+                                    <li>consectetur adipisicing elit</li>
+                                    <li>Tempore quibusdam esse</li>
+                                    <li>Quo at iusto deleniti</li>
+                                </ul>
+
+                                <h4>Subtitle</h4>
+                                <div class="bottom-section-spacer-md">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo at iusto
+                                        deleniti hic eius
+                                        explicabo corporis. Tempore quibusdam esse ipsam necessitatibus magni hic,
+                                        molestiae rem
+                                        suscipit sint eius, alias officiis.</p>
+                                </div>
+
+                                <div>
+                                    <h4>Read More</h4>
+                                    <a class="link-underlined" href="#">Call to action text</a>.
+                                </div>
+
+                            </aside>
+                        </div>
+                    </section>
+                </div>
+            </div> 
         </div>
 
 
@@ -1511,8 +1755,11 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <div>
-                        <p>New styles created in late 2023 by Eric Njanga under contract with Halton Region. To engage with Eric on future projects, please contact: <span class="badge badge-primary">eric.njanga@gmail.com</span> or <span class="badge badge-primary">416 270
-                            2901</span></p>
+                        <p>New styles created in late 2023 by Eric Njanga under contract with Halton Region. To engage
+                            with Eric on future projects, please contact: <span
+                                class="badge badge-primary">eric.njanga@gmail.com</span> or <span
+                                class="badge badge-primary">416 270
+                                2901</span></p>
                     </div>
                 </div>
             </div>
@@ -1534,15 +1781,32 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.2/dist/umd/photoswipe.umd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/photoswipe@5.4.2/dist/umd/photoswipe-lightbox.umd.min.js"></script>
-
-
     <script src="/dist/scripts.bundle.js"></script>
 </body>
 
 </html>
+
+
+
+
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html> -->
